@@ -13,4 +13,11 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - name: Use Node.js 18
-        uses: 
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18.x
+          cache: "npm"
+      - run: npm ci
+      - run: npm test
+      - run: ./prisma/useSqlite.sh && npm run postinstall
+
