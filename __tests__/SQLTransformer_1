@@ -1,2 +1,22 @@
 -- Find customers whose increase in spending was larger on the web than
 -- in stores for the year 2000, when compared to previous year
+
+-- GPT-3.5
+SELECT
+  c.CUSTKEY,
+  SUM(l.EXTENDEDPRICE) AS web_spending_2000,
+  SUM(CASE
+    WHEN YEAR(l.SHIPDATE) = 1999 THEN l.EXTENDEDPRICE
+    ELSE 0
+  END) AS web_spending_1999,
+  SUM(o.TOTALPRICE) AS store_spending_2000,
+  SUM(CASE
+    WHEN YEAR(o.ORDERDATE) = 1999 THEN o.TOTALPRICE
+    ELSE 0
+  END) AS store_spending_1999
+FROM
+  LINEITEM l
+  JOIN ORDERS o ON l.ORDERKEY = o.ORDERKEY
+  JOIN CUSTOMER c ON o.CUSTKEY = c.CUSTKEY
+WHERE
+  YEAR(l.SHIPDAT
