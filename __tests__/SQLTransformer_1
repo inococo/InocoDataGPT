@@ -76,3 +76,13 @@ HAVING
 SELECT
   cust.C_CUSTKEY,
   cust.C_NAME,
+  cust.C_PHONE,
+  cust.C_ADDRESS,
+  web_spending - store_spending AS spending_increase_web_vs_store
+FROM
+  customer AS cust
+  JOIN (
+    SELECT
+      L_ORDERKEY,
+      SUM(CASE WHEN L_SHIPDATE >= '2000-01-01' AND L_SHIPDATE <= '2000-12-31' THEN L_EXTENDEDPRICE * (1-L_DISCOUNT) ELSE 0 END) AS web_spending,
+      SUM(CASE WHEN L_SHIPDATE < '2000-01-01' OR L_SHIPDATE > '2000-12-31' THEN L_EXTENDEDPRICE * (1-L_DISCOUNT) ELSE 0 END) AS stor
