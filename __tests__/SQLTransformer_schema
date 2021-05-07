@@ -1,0 +1,5 @@
+-- predict new customer counts after 2023
+-- (incorrect)
+
+SELECT COUNT(*) AS new_customer_counts
+F
