@@ -2,4 +2,21 @@
 -- as a comma-separated list in the 'TPCH_SF1' schema
 -- within the 'SNOWFLAKE_SAMPLE_DATA' database.
 SELECT table_name, LISTAGG(column_name, ', ') WITHIN GROUP (ORDER BY column_name) AS columns
-FROM SNOWFLAKE_SAMPLE_DATA.
+FROM SNOWFLAKE_SAMPLE_DATA.INFORMATION_SCHEMA.COLUMNS
+WHERE table_schema = 'TPCH_SF1'
+GROUP BY table_name;
+
+-- Results can be cached for LLM:
+const TableColumns = "
+[
+  {
+    TABLE_NAME: 'PARTSUPP',
+    COLUMNS: 'PS_AVAILQTY, PS_COMMENT, PS_PARTKEY, PS_SUPPKEY, PS_SUPPLYCOST'
+  },
+  {
+    TABLE_NAME: 'ORDERS',
+    COLUMNS: 'O_CLERK, O_COMMENT, O_CUSTKEY, O_ORDERDATE, O_ORDERKEY, O_ORDERPRIORITY, O_ORDERSTATUS, O_SHIPPRIORITY, O_TOTALPRICE'
+  },
+  {
+    TABLE_NAME: 'LINEITEM',
+    CO
