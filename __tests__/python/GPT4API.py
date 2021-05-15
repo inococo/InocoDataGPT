@@ -27,4 +27,7 @@ if __name__ == "__main__":
     prompt = "Please count the plastic bags in the picture"
 
     try:
-        result = se
+        result = send_image_and_text_to_gpt4(image_path, prompt)
+        print(result)
+    except Exception as error:
+        print(f"GPT-4 API Error: {error}")

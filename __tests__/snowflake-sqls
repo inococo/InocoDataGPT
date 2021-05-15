@@ -1,0 +1,5 @@
+-- This query will return table names along with their respective column names
+-- as a comma-separated list in the 'TPCH_SF1' schema
+-- within the 'SNOWFLAKE_SAMPLE_DATA' database.
+SELECT table_name, LISTAGG(column_name, ', ') WITHIN GROUP (ORDER BY column_name) AS columns
+FROM SNOWFLAKE_SAMPLE_DATA.
