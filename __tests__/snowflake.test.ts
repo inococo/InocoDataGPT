@@ -10,4 +10,15 @@ import { getQueryOperatorStats as getQueryOperatorStatsExt } from "../src/utils/
 
 async function testQuerySnowflake() {
   console.log('Snowflake: testing............................');
-  console.log("process.env.SNOWFLA
+  console.log("process.env.SNOWFLAKE_ACCOUNT:", process.env.SNOWFLAKE_ACCOUNT);
+  console.log("process.env.SNOWFLAKE_USERNAME:", process.env.SNOWFLAKE_USERNAME);
+
+  console.log('Snowflake: querying............................');
+  const results = await querySnowflake('SELECT count(*) FROM customer');
+  console.log('Snowflake query results:', results);
+}
+
+async function getQueryOperatorStats() {
+  // Step 1: Get the last query ID
+  const queryIdQuery = 'SELECT last_query_id();';
+  const que
