@@ -30,3 +30,18 @@ async function getQueryOperatorStats() {
   const operatorStatsResult = await querySnowflake(operatorStatsQuery);
 
   console.log("get_query_operator_stats: ", operatorStatsResult);
+}
+
+async function testQuerySnowflakeExt() {
+  console.log('Snowflake: ext querying');
+  const results = await querySnowflakeAPI(
+    `SELECT EXTRACT(YEAR FROM O_ORDERDATE) AS OrderYear, COUNT(DISTINCT O_CUSTKEY) AS CustomerCount
+    FROM "SNOWFLAKE_SAMPLE_DATA"."TPCH_SF1"."ORDERS"
+    GROUP BY OrderYear
+    ORDER BY OrderYear;`
+  );
+  console.log('Snowflake ext query results:', results);
+}
+
+async function main() {
+ 
