@@ -44,4 +44,17 @@ async function testQuerySnowflakeExt() {
 }
 
 async function main() {
- 
+  try {
+    console.log('Running testQuerySnowflake...');
+    await testQuerySnowflake();
+    console.log('testQuerySnowflake completed.');
+
+    console.log('Running getQueryOperatorStats...');
+    await getQueryOperatorStats();
+    console.log('getQueryOperatorStats completed.');
+
+    console.log('Running testQuerySnowflakeExt...');
+    await testQuerySnowflakeExt();
+    console.log('testQuerySnowflakeExt completed.');
+
+    console.log('Running getQu
