@@ -57,4 +57,12 @@ async function main() {
     await testQuerySnowflakeExt();
     console.log('testQuerySnowflakeExt completed.');
 
-    console.log('Running getQu
+    console.log('Running getQueryOperatorStatsExt...');
+    await getQueryOperatorStatsExt();
+    console.log('getQueryOperatorStatsExt completed.');
+  } catch (error) {
+    console.error("Error while executing tests:", error);
+  }
+}
+
+main();
