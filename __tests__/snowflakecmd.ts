@@ -10,4 +10,18 @@ const rl = readline.createInterface({
 });
 
 async function main() {
-  /
+  // Add a delay (2000ms) before printing the first prompt
+  await new Promise<void>((r) => setTimeout(r, 2000));
+  while (true) {
+    await new Promise<void>((resolve) => {
+      rl.question('Enter SQL query: ', async (sqlText) => {
+        if (!sqlText.trim()) {
+          console.log('Exiting...');
+          rl.close();
+          resolve();
+          return;
+        }
+
+        try {
+          const result = await querySnowflake(sqlText);
+          console.log('Resul
