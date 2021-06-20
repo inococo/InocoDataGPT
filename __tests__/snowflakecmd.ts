@@ -24,4 +24,18 @@ async function main() {
 
         try {
           const result = await querySnowflake(sqlText);
-          console.log('Resul
+          console.log('Result:', result);
+        } catch (err) {
+          console.error('querySnowflakeCmd Error:', err);
+        }
+
+        resolve();
+      });
+    });
+  }
+}
+
+main().catch((err) => {
+  console.error('Error:', err.message);
+  process.exit(1);
+});
