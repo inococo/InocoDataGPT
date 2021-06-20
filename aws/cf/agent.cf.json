@@ -141,3 +141,177 @@
                                 "mkdir /home/ec2-user/config\n",
                                 "\n",
                                 "cat << EOF > /home/ec2-user/config/backup_disk.xml\n",
+                                "<clickhouse>\n",
+                                "    <storage_configuration>\n",
+                                "        <disks>\n",
+                                "            <backups>\n",
+                                "                <type>local</type>\n",
+                                "                <path>/etc/clickhouse-server/</path>\n",
+                                "            </backups>\n",
+                                "        </disks>\n",
+                                "    </storage_configuration>\n",
+                                "    <backups>\n",
+                                "        <allowed_disk>backups</allowed_disk>\n",
+                                "        <allowed_path>/etc/clickhouse-server/</allowed_path>\n",
+                                "    </backups>\n",
+                                "</clickhouse>\n",
+                                "EOF\n",
+                                "\n",
+                                "cat << EOF > /home/ec2-user/config/chroma_users.xml\n",
+                                "<clickhouse>\n",
+                                "    <profiles>\n",
+                                "      <default>\n",
+                                "            <allow_experimental_lightweight_delete>1</allow_experimental_lightweight_delete>\n",
+                                "            <mutations_sync>1</mutations_sync>\n",
+                                "        </default>\n",
+                                "    </profiles>\n",
+                                "</clickhouse>\n",
+                                "\n",
+                                "EOF\n",
+                                "\n",
+                                "docker-compose -f /home/ec2-user/docker-compose.yml up -d\n",
+                                "\n",
+                                "--//--\n"
+                            ]
+                        ]
+                    }
+                },
+                "SecurityGroupIds": [
+                    {
+                        "Ref": "ChromaInstanceSecurityGroup"
+                    }
+                ],
+                "KeyName": {
+                    "Fn::If": [
+                        "HasKeyName",
+                        {
+                            "Ref": "KeyName"
+                        },
+                        {
+                            "Ref": "AWS::NoValue"
+                        }
+                    ]
+                },
+                "BlockDeviceMappings": [
+                    {
+                        "DeviceName": {
+                            "Fn::FindInMap": [
+                                "Region2AMI",
+                                {
+                                    "Ref": "AWS::Region"
+                                },
+                                "RootDeviceName"
+                            ]
+                        },
+                        "Ebs": {
+                            "VolumeSize": 24
+                        }
+                    }
+                ]
+            }
+        },
+        "ChromaInstanceSecurityGroup": {
+            "Type": "AWS::EC2::SecurityGroup",
+            "Properties": {
+                "GroupDescription": "Chroma Instance Security Group",
+                "SecurityGroupIngress": [
+                    {
+                        "IpProtocol": "tcp",
+                        "FromPort": "22",
+                        "ToPort": "22",
+                        "CidrIp": "0.0.0.0/0"
+                    },
+                    {
+                        "IpProtocol": "tcp",
+                        "FromPort": "8000",
+                        "ToPort": "8000",
+                        "CidrIp": "0.0.0.0/0"
+                    }
+                ]
+            }
+        }
+    },
+    "Outputs": {
+        "ServerIp": {
+            "Description": "IP address of the Chroma server",
+            "Value": {
+                "Fn::GetAtt": [
+                    "ChromaInstance",
+                    "PublicIp"
+                ]
+            }
+        }
+    },
+    "Mappings": {
+        "Region2AMI": {
+            "ap-south-1": {
+                "AMI": "ami-0a26068186838e542",
+                "RootDeviceName": "/dev/xvda"
+            },
+            "eu-north-1": {
+                "AMI": "ami-04429d960e0f4871e",
+                "RootDeviceName": "/dev/xvda"
+            },
+            "eu-west-3": {
+                "AMI": "ami-00575c0cbc20caf50",
+                "RootDeviceName": "/dev/xvda"
+            },
+            "eu-west-2": {
+                "AMI": "ami-0acf1d0fb2c50538d",
+                "RootDeviceName": "/dev/xvda"
+            },
+            "eu-west-1": {
+                "AMI": "ami-09e2d756e7d78558d",
+                "RootDeviceName": "/dev/xvda"
+            },
+            "ap-northeast-3": {
+                "AMI": "ami-0bfdfe2977c12e24b",
+                "RootDeviceName": "/dev/xvda"
+            },
+            "ap-northeast-2": {
+                "AMI": "ami-02de72c5dc79358c9",
+                "RootDeviceName": "/dev/xvda"
+            },
+            "ap-northeast-1": {
+                "AMI": "ami-0329eac6c5240c99d",
+                "RootDeviceName": "/dev/xvda"
+            },
+            "ca-central-1": {
+                "AMI": "ami-0f6b3aca8444b4f04",
+                "RootDeviceName": "/dev/xvda"
+            },
+            "sa-east-1": {
+                "AMI": "ami-078f9645b086944ab",
+                "RootDeviceName": "/dev/xvda"
+            },
+            "ap-southeast-1": {
+                "AMI": "ami-00653100209f2247d",
+                "RootDeviceName": "/dev/xvda"
+            },
+            "ap-southeast-2": {
+                "AMI": "ami-0d6fb2916ee0ab9fe",
+                "RootDeviceName": "/dev/xvda"
+            },
+            "eu-central-1": {
+                "AMI": "ami-06616b7884ac98cdd",
+                "RootDeviceName": "/dev/xvda"
+            },
+            "us-east-1": {
+                "AMI": "ami-09d3b3274b6c5d4aa",
+                "RootDeviceName": "/dev/xvda"
+            },
+            "us-east-2": {
+                "AMI": "ami-0beaa649c482330f7",
+                "RootDeviceName": "/dev/xvda"
+            },
+            "us-west-1": {
+                "AMI": "ami-0e4d9ed95865f3b40",
+                "RootDeviceName": "/dev/xvda"
+            },
+            "us-west-2": {
+                "AMI": "ami-098e42ae54c764c35",
+                "RootDeviceName": "/dev/xvda"
+            }
+        }
+    }
+}
