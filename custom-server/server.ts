@@ -19,4 +19,14 @@ app.prepare().then(() => {
     await snowflakeHandler(req, res);
   };
 
-  server.u
+  server.use('/api/snowflake', snowflakeMiddleware);
+
+  server.all('*', (req: Request, res: Response) => {
+    const parsedUrl = parse(req.url!, true);
+    handle(req, res, parsedUrl);
+  });
+
+  server.listen(3001, () => {
+    console.log(`> Custom server ready on http://localhost:3001`);
+  });
+});
