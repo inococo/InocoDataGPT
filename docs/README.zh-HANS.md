@@ -303,3 +303,21 @@ npm run dev
   </a>
   <a href="https://github.com/xinghz" style="display: inline-block; margin-right: 20px;">
     <img src="https://github.com/xinghz.png" width="50px" alt="xinghz" style="max-width:100%;">
+  </a>
+  <a href="https://github.com/Jaimbart" style="display: inline-block; margin-right: 20px;">
+    <img src="https://github.com/Jaimbart.png" width="50px" alt="Jaimbart" style="max-width:100%;">
+  </a>
+  <a href="https://github.com/Jhonvolt17" style="display: inline-block; margin-right: 20px;">
+    <img src="https://github.com/Jhonvolt17.png" width="50px" alt="Jhonvolt17" style="max-width:100%;">
+  </a>
+  <a href="https://github.com/koltziver" style="display: inline-block; margin-right: 20px;">
+    <img src="https://github.com/koltziver.png" width="50px" alt="koltziver" style="max-width:100%;">
+  </a>
+  <a href="https://github.com/sirswali" style="display: inline-block; margin-right: 20px;">
+    <img src="https://github.com/sirswali.png" width="50px" alt="sirswali" style="max-width:100%;">
+  </a>
+  <a href="https://github.com/DixonFyre" style="display: inline-block; margin-right: 20px;">
+    <img src="https://github.com/DixonFyre.png" width="50px" alt="DixonFyre" style="max-width:100%;">
+  </a>
+
+</div>
