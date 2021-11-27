@@ -23,4 +23,9 @@ module.exports = {
   },
   localePath: typeof window === "undefined" ? "./public/locales" : "/locales",
   debug: false,
-  reloadOn
+  reloadOnPrerender: process.env.NODE_ENV === "development",
+  defaultNS: "translation",
+  react: {
+    useSuspense: false,
+  },
+};
