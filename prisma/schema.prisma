@@ -46,4 +46,32 @@ model User {
   image          String?
   role           String?
   subscriptionId String?   
-  customerId     
+  customerId     String?   
+
+  createDate DateTime @default(now())
+
+  accounts Account[]
+  sessions Session[]
+  Agent    Agent[]
+
+  @@index([email])
+}
+
+model VerificationToken {
+  identifier String
+  token      String   @unique
+  expires    DateTime
+
+  @@unique([identifier, token])
+}
+
+model Agent {
+  id     String @id @default(cuid())
+  userId String
+  name   String 
+  goal   String 
+
+  deleteDate DateTime?
+  createDate DateTime  @default(now())
+
+  user  User        @relation(fields: 
