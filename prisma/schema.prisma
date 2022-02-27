@@ -74,4 +74,25 @@ model Agent {
   deleteDate DateTime?
   createDate DateTime  @default(now())
 
-  user  User        @relation(fields: 
+  user  User        @relation(fields: [userId], references: [id], onDelete: Cascade)
+  tasks AgentTask[]
+
+  @@index([userId, deleteDate, createDate])
+}
+
+model AgentTask {
+  id      String  @id @default(cuid())
+  agentId String
+  type    String
+  value   String  
+  info    String? 
+  sort    Int
+
+  deleteDate DateTime?
+  createDate DateTime  @default(now())
+
+  agent Agent @relation(fields: [agentId], references: [id], onDelete: Cascade)
+
+  @@index([agentId])
+  @@index([type])
+}
