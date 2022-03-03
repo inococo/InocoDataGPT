@@ -9,4 +9,5 @@
   "All tasks completed. Shutting down.": "Alle Aufgaben abgeschlossen. Herunterfahren.",
   "ERROR accessing OpenAI APIs. Please check your API key or try again later": "FEHLER: Zugriff auf OpenAI APIs nicht möglich. Bitte überprüfen Sie Ihren API-Schlüssel oder versuchen Sie es später erneut.",
   "ERROR using your OpenAI API key. You've exceeded your current quota, please check your plan and billing details.": "FEHLER bei der Verwendung Ihres OpenAI-API-Schlüssels. Sie haben Ihre aktuelle Quote überschritten. Bitte überprüfen Sie Ihren Plan und Ihre Abrechnungsdetails.",
-  "ERROR your API key does not have GPT-4 access. You must first join OpenAI's wait-list. (This is di
+  "ERROR your API key does not have GPT-4 access. You must first join OpenAI's wait-list. (This is different from ChatGPT Plus)": "FEHLER: Ihr API-Schlüssel hat keinen Zugriff auf GPT-4. Sie müssen sich zunächst in OpenAIs Warteliste eintragen. (Dies unterscheidet sich von ChatGPT Plus)",
+  "ERROR retrieving initial tasks array. Retry, make your goal more clear, or revise your goal such that it is within our model's policies to run. Shutting Down.": "FEHLER beim Abrufen des ursprünglichen Aufgaben-Arrays. Wiederholen Sie den Vorgang, machen Sie Ihr Ziel klarer oder übera
