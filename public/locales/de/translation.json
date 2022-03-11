@@ -40,4 +40,6 @@
   "Follow the journey below:": "Folgen Sie der Reise unten:",
   "Key is invalid, please ensure that you have set up billing in your OpenAI account!": "Schlüssel ist ungültig, bitte stellen Sie sicher, dass Sie die Abrechnung in Ihrem OpenAI-Konto eingerichtet haben!",
   "Higher values will make the output more random, while lower values make the output more focused and deterministic.": "Höhere Werte machen die Ausgabe zufälliger, während niedrigere Werte die Ausgabe fokussierter und deterministischer machen.",
-  "Controls the maximum number of loops that the agent will run
+  "Controls the maximum number of loops that the agent will run (higher value will make more API calls).": "Kontrolliert die maximale Anzahl von Schleifen, die der Agent ausführen wird (höhere Werte führen zu mehr API-Aufrufen).",
+  "Settings ⚙": "Einstellungen ⚙",
+  "Here you can add your OpenAI API key. This will require you to pay for your own OpenAI usage but give you greater access to AgentGPT! You can additionally select any model OpenAI offers.": "Hier können Sie Ihren OpenAI-API-Schlüssel hinzufügen. Dies
