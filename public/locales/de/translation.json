@@ -38,4 +38,6 @@
   "Web browsing 🌐": "Web-Browsing 🌐",
   "Interaction with websites and people 👨‍👩‍👦": "Interaktion mit Websites und Menschen 👨‍👩‍👦",
   "Follow the journey below:": "Folgen Sie der Reise unten:",
-  "Key is invali
+  "Key is invalid, please ensure that you have set up billing in your OpenAI account!": "Schlüssel ist ungültig, bitte stellen Sie sicher, dass Sie die Abrechnung in Ihrem OpenAI-Konto eingerichtet haben!",
+  "Higher values will make the output more random, while lower values make the output more focused and deterministic.": "Höhere Werte machen die Ausgabe zufälliger, während niedrigere Werte die Ausgabe fokussierter und deterministischer machen.",
+  "Controls the maximum number of loops that the agent will run
