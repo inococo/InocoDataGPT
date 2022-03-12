@@ -42,4 +42,7 @@
   "Higher values will make the output more random, while lower values make the output more focused and deterministic.": "Höhere Werte machen die Ausgabe zufälliger, während niedrigere Werte die Ausgabe fokussierter und deterministischer machen.",
   "Controls the maximum number of loops that the agent will run (higher value will make more API calls).": "Kontrolliert die maximale Anzahl von Schleifen, die der Agent ausführen wird (höhere Werte führen zu mehr API-Aufrufen).",
   "Settings ⚙": "Einstellungen ⚙",
-  "Here you can add your OpenAI API key. This will require you to pay for your own OpenAI usage but give you greater access to AgentGPT! You can additionally select any model OpenAI offers.": "Hier können Sie Ihren OpenAI-API-Schlüssel hinzufügen. Dies
+  "Here you can add your OpenAI API key. This will require you to pay for your own OpenAI usage but give you greater access to AgentGPT! You can additionally select any model OpenAI offers.": "Hier können Sie Ihren OpenAI-API-Schlüssel hinzufügen. Dies erfordert, dass Sie für Ihre eigene OpenAI-Nutzung bezahlen, gibt Ihnen aber einen größeren Zugang zu AgentGPT! Sie können zusätzlich jedes von OpenAI angebotene Modell auswählen.",
+  "To use the GPT-4 model, you need to also provide the API key for GPT-4. You can request for it": "Um das GPT-4-Modell zu verwenden, müssen Sie auch den API-Schlüssel für GPT-4 bereitstellen. Sie können ihn hier anfordern",
+  "here": "hier",
+  "(ChatGPT Plus subscription will not work)": "(Ch
