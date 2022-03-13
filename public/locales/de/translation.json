@@ -58,4 +58,14 @@
   "Too many requests, please try again later.": "Zu viele Anfragen, bitte versuchen Sie es später erneut.",
   "Copied to clipboard! 🚀": "In die Zwischenablage kopiert! 🚀",
   "Beta 🚀": "Beta 🚀",
- 
+  "AgentName": "Name",
+  "AgentGoal": "Ziel",
+  "AgentLanguage:": "Sprache",
+  "Make the world a better place.": "Machen Sie die Welt zu einem besseren Ort.",
+  "Deploy Agent": "Agent bereitstellen",
+  "Running": "Läuft",
+  "Stopping": "Stoppen",
+  "Stop Agent": "Agent stoppen",
+  "Goal: ": "Ziel: ",
+  "Adding Task: ": "Aufgabe hinzufügen: "
+}
