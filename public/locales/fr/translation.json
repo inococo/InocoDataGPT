@@ -5,4 +5,7 @@
   "Rate limit exceeded. Please slow down. 😅": "Limite de taux dépassée. Veuillez ralentir. 😅",
   "This agent has maxed out on loops. To save your wallet, this agent is shutting down. You can configure the number of loops in the advanced settings.": "Cet agent a atteint le nombre maximum de boucles. Pour économiser votre portefeuille, cet agent s'arrête. Vous pouvez configurer le nombre de boucles dans les paramètres avancés.",
   "We're sorry, because this is a demo, we cannot have our agents running for too long. Note, if you desire longer runs, please provide your own API key in Settings. Shutting down.": "Nous sommes désolés, mais comme ceci est une démonstration, nos agents ne peuvent pas fonctionner trop longtemps. Si vous voulez des exécutions plus longues, veuillez fournir votre propre clé API dans les Paramètres. Fermeture.",
-  "The agent has been ma
+  "The agent has been manually shutdown.": "L'agent a été arrêté manuellement.",
+  "All tasks completed. Shutting down.": "Toutes les tâches sont terminées. Fermeture.",
+  "ERROR accessing OpenAI APIs. Please check your API key or try again later": "ERREUR d'accès aux APIs OpenAI. Veuillez vérifier votre clé API ou réessayer plus tard.",
+  "ERROR using your OpenAI API key. You've exceeded your current quota, please check your plan and billing details.": "ERREUR lors 
