@@ -25,4 +25,11 @@
   "Executing:": "Exécution en cours :",
   "Close": "Fermer",
   "Sign in to be able to save agents and manage your account!": "Connectez-vous pour pouvoir enregistrer des agents et gérer votre compte !",
-  "You need to create and save your first agent before anything shows up here!": "Vous devez créer et enregistrer votre premier agent
+  "You need to create and save your first agent before anything shows up here!": "Vous devez créer et enregistrer votre premier agent avant que quoi que ce soit n'apparaisse ici !",
+  "Help": "Aide",
+  "Sign Out": "Déconnexion",
+  "Sign In": "Connexion",
+  "Account": "Compte",
+  "Go Pro": "Passer Pro",
+  "Welcome to AgentGPT 🤖": "Bienvenue sur AgentGPT 🤖",
+  "allows you to configure and deploy Autonomous AI agents. Name your custom AI and have it embark on any goal imaginable. It will attempt to reach the goal by thinking of tasks to do, executing them, and learning from the results 
