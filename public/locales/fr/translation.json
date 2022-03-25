@@ -35,4 +35,8 @@
   "allows you to configure and deploy Autonomous AI agents. Name your custom AI and have it embark on any goal imaginable. It will attempt to reach the goal by thinking of tasks to do, executing them, and learning from the results 🚀": "vous permet de configurer et de déployer des agents IA autonomes. Nommez votre IA personnalisée et faites-la se lancer dans n'importe quel but imaginable. Elle tentera d'atteindre le but en réfléchissant aux tâches à effectuer, en les exécutant et en apprenant des résultats 🚀",
   "This platform is currently in beta, we are currently working on:": "Cette plateforme est actuellement en version bêta, nous travaillons actuellement sur :",
   "Long term memory 🧠": "Mémoire à long terme 🧠",
-  "W
+  "Web browsing 🌐": "Navigation sur le Web 🌐",
+  "Interaction with websites and people 👨‍👩‍👦": "Interaction avec des sites Web et des personnes 👨‍👩‍👦",
+  "Follow the journey below:": "Suivez le parcours ci-dessous :",
+  "Key is invalid, please ensure that you have set up billing in your OpenAI account!": "Clé invalide, veuillez vous assurer que vous avez configuré la facturation dans votre compte OpenAI!",
+  "Higher values will make the output more random, while lower values make t
