@@ -39,4 +39,7 @@
   "Interaction with websites and people 👨‍👩‍👦": "Interaction avec des sites Web et des personnes 👨‍👩‍👦",
   "Follow the journey below:": "Suivez le parcours ci-dessous :",
   "Key is invalid, please ensure that you have set up billing in your OpenAI account!": "Clé invalide, veuillez vous assurer que vous avez configuré la facturation dans votre compte OpenAI!",
-  "Higher values will make the output more random, while lower values make t
+  "Higher values will make the output more random, while lower values make the output more focused and deterministic.": "Des valeurs plus élevées rendront la sortie plus aléatoire, tandis que des valeurs plus basses rendront la sortie plus ciblée et déterministe.",
+  "Controls the maximum number of loops that the agent will run (higher value will make more API calls).": "Contrôle le nombre maximal de boucles que l'agent effectuera (une valeur plus élevée effectuera plus d'appels API).",
+  "Settings ⚙": "Paramètres ⚙",
+  "Here you can add your Op
