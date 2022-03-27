@@ -42,4 +42,5 @@
   "Higher values will make the output more random, while lower values make the output more focused and deterministic.": "Des valeurs plus élevées rendront la sortie plus aléatoire, tandis que des valeurs plus basses rendront la sortie plus ciblée et déterministe.",
   "Controls the maximum number of loops that the agent will run (higher value will make more API calls).": "Contrôle le nombre maximal de boucles que l'agent effectuera (une valeur plus élevée effectuera plus d'appels API).",
   "Settings ⚙": "Paramètres ⚙",
-  "Here you can add your Op
+  "Here you can add your OpenAI API key. This will require you to pay for your own OpenAI usage but give you greater access to AgentGPT! You can additionally select any model OpenAI offers.": "Vous pouvez ajouter ici votre clé API OpenAI. Cela nécessitera que vous payiez pour votre propre utilisation OpenAI, mais vous donnera un accès plus grand à AgentGPT ! Vous pouvez également sélectionner n'importe quel modèle proposé par OpenAI.",
+  "To use the GPT-4 model, you need to also provide the A
