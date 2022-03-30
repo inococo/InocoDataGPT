@@ -49,4 +49,9 @@
   "Model: ": "Modèle : ",
   "Key: ": "Clé : ",
   "Advanced Settings": "Paramètres avancés",
-  "NOTE: To get a key, sign up for an OpenAI account and visit the following": "REMARQUE : Pour 
+  "NOTE: To get a key, sign up for an OpenAI account and visit the following": "REMARQUE : Pour obtenir une clé, créez un compte OpenAI et visitez le lien suivant",
+  "link": "lien",
+  "This key is only used in the current browser session": "Cette clé est uniquement utilisée dans la session du navigateur en cours",
+  "Current tasks": "Tâches actuelles",
+  "Assemble, configure, and deploy autonomous AI Agents in your browser.": "Assembler, configurer et déployer des Agents AI autonomes dans votre navigateur.",
+  "Too many requests
