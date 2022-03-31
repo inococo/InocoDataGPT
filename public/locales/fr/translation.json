@@ -64,4 +64,8 @@
   "Deploy Agent": "Déployer l'Agent",
   "Running": "En cours d'exécution",
   "Stopping": "En cours d'arrêt",
-  "Stop Agen
+  "Stop Agent": "Arrêter l'Agent",
+  "Export": "Exporter",
+  "Goal: ": "Objectif: ",
+  "Adding Task: ": "Ajout de tâche: "
+}
