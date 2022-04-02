@@ -1,4 +1,7 @@
 {
   "Select language": "Odaberite jezik",
   "Task marked as complete.": "Zadatak označen kao dovršen.",
-  "ERROR adding additional task(s). It might have been against our model's policies to run them. Continuing.": "GREŠKA pri dodavanju dodatnih zadataka. Moguće je da su protivne našim pravilima modela za njihovo pokretanje. Nastavak rad
+  "ERROR adding additional task(s). It might have been against our model's policies to run them. Continuing.": "GREŠKA pri dodavanju dodatnih zadataka. Moguće je da su protivne našim pravilima modela za njihovo pokretanje. Nastavak rada.",
+  "Rate limit exceeded. Please slow down. 😅": "Prekoračenje stope ograničenja. Molimo usporite. 😅",
+  "This agent has maxed out on loops. To save your wallet, this agent is shutting down. You can configure the number of loops in the advanced settings.": "Ovaj je agent dosegnuo maksimalan broj petlji. Kako biste sačuvali novčanik, ovaj se agent isključuje. Broj petlji možete konfigurirati u naprednim postavkama.",
+  "We're sorry, because this is a demo, we cannot hav
