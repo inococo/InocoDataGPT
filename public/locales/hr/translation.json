@@ -35,4 +35,9 @@
   "Welcome to AgentGPT 🤖": "Dobrodošli u AgentGPT 🤖",
   "allows you to configure and deploy Autonomous AI agents. Name your custom AI and have it embark on any goal imaginable. It will attempt to reach the goal by thinking of tasks to do, executing them, and learning from the results 🚀": "omogućuje vam konfiguriranje i implementaciju autonomnih AI agenata. Nazovite svoj prilagođeni AI i pustite ga da krene prema bilo kojem zamislivom cilju. Pokušat će doseći cilj razmišljajući o zadacima koje treba obaviti, izvršavajući ih i učeći iz rezultata 🚀",
   "This platform is currently in beta, we are currently working on:": "Ova platforma trenutno je u beta fazi, trenutno radimo na:",
-  "Long term memory 🧠": "Dugoročna memo
+  "Long term memory 🧠": "Dugoročna memorija 🧠",
+  "Web browsing 🌐": "Web pregledavanje 🌐",
+  "Interaction with websites and people 👨‍👩‍👦": "Interakcija s web stranicama i ljudima 👨‍👩‍👦",
+  "Follow the journey below:": "Pratite putovanje u nastavku:",
+  "Key is invalid, please ensure that you have set up billing in your OpenAI account!": "Ključ nije valjan, provjerite jeste li postavili obračun u svom OpenAI računu!",
+  "Higher values will make the output more random, while lower values make the output more focused a
