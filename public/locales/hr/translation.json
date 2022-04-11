@@ -40,4 +40,7 @@
   "Interaction with websites and people 👨‍👩‍👦": "Interakcija s web stranicama i ljudima 👨‍👩‍👦",
   "Follow the journey below:": "Pratite putovanje u nastavku:",
   "Key is invalid, please ensure that you have set up billing in your OpenAI account!": "Ključ nije valjan, provjerite jeste li postavili obračun u svom OpenAI računu!",
-  "Higher values will make the output more random, while lower values make the output more focused a
+  "Higher values will make the output more random, while lower values make the output more focused and deterministic.": "Veće vrijednosti čine izlaz više slučajnim, dok niže vrijednosti čine izlaz usmjerenijim i determinističkim.",
+  "Controls the maximum number of loops that the agent will run (higher value will make more API calls).": "Kontrolira maksimalni broj petlji koje će agent izvršiti (viša vrijednost će izazvati više API poziva).",
+  "Settings ⚙": "Postavke ⚙",
+  "Here you can add your OpenAI API key. This will require you to pay for your ow
