@@ -43,4 +43,5 @@
   "Higher values will make the output more random, while lower values make the output more focused and deterministic.": "Veće vrijednosti čine izlaz više slučajnim, dok niže vrijednosti čine izlaz usmjerenijim i determinističkim.",
   "Controls the maximum number of loops that the agent will run (higher value will make more API calls).": "Kontrolira maksimalni broj petlji koje će agent izvršiti (viša vrijednost će izazvati više API poziva).",
   "Settings ⚙": "Postavke ⚙",
-  "Here you can add your OpenAI API key. This will require you to pay for your ow
+  "Here you can add your OpenAI API key. This will require you to pay for your own OpenAI usage but give you greater access to AgentGPT! You can additionally select any model OpenAI offers.": "Ovdje možete dodati svoj OpenAI API ključ. To će zahtijevati plaćanje vaše vlastite OpenAI upotrebe, ali dati će vam veći pristup AgentGPT-u! Dodatno možete odabrati bilo koji model koji OpenAI nudi.",
+  "To use the GPT-4 model, you need to also provide the API key for GPT-4. You can request for it": "Za korište
