@@ -44,4 +44,12 @@
   "Controls the maximum number of loops that the agent will run (higher value will make more API calls).": "Kontrolira maksimalni broj petlji koje će agent izvršiti (viša vrijednost će izazvati više API poziva).",
   "Settings ⚙": "Postavke ⚙",
   "Here you can add your OpenAI API key. This will require you to pay for your own OpenAI usage but give you greater access to AgentGPT! You can additionally select any model OpenAI offers.": "Ovdje možete dodati svoj OpenAI API ključ. To će zahtijevati plaćanje vaše vlastite OpenAI upotrebe, ali dati će vam veći pristup AgentGPT-u! Dodatno možete odabrati bilo koji model koji OpenAI nudi.",
-  "To use the GPT-4 model, you need to also provide the API key for GPT-4. You can request for it": "Za korište
+  "To use the GPT-4 model, you need to also provide the API key for GPT-4. You can request for it": "Za korištenje GPT-4 modela, također trebate pružiti API ključ za GPT-4. Možete zatražiti",
+  "here": "ovdje",
+  "(ChatGPT Plus subscription will not work)": "(pretplata ChatGPT Plus neće raditi)",
+  "Model: ": "Model: ",
+  "Key: ": "Ključ: ",
+  "Advanced Settings": "Napredne postavke",
+  "NOTE: To get a key, sign up for an OpenAI account and visit the following": "NAPOMENA: Da biste dobili ključ, registrirajte se za OpenAI račun i posjetite sljedeći",
+  "link": "link",
+  "This key is on
