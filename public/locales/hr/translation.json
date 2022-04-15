@@ -56,4 +56,16 @@
   "Current tasks": "Trenutni zadaci",
   "Assemble, configure, and deploy autonomous AI Agents in your browser.": "Sastavite, konfigurirajte i implementirajte samostalne AI agente u svom pregledniku.",
   "Too many requests, please try again later.": "Previše zahtjeva, molimo pokušajte ponovno kasnije.",
-  "Copied to clipboard! 🚀": "Kopirano u međuspre
+  "Copied to clipboard! 🚀": "Kopirano u međuspremnik! 🚀",
+  "Beta 🚀": "Beta 🚀",
+  "Name:": "Ime:",
+  "Goal:": "Cilj:",
+  "Make the world a better place.": "Učinite svijet boljim mjestom.",
+  "Agent's Language:": "Jezik agenta:",
+  "Deploy Agent": "Implementiraj agenta",
+  "Running": "Pokrenuto",
+  "Stopping": "Zaustavljanje",
+  "Stop Agent": "Zaustavi agenta",
+  "Goal: ": "Cilj: ",
+  "Adding Task: ": "Dodavanje zadatka: "
+}
