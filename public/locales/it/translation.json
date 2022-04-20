@@ -25,4 +25,7 @@
   "Interaction with websites and people 👨‍👩‍👦": "Interazione con siti web e persone 👨‍👩‍👦",
   "Follow the journey below:": "Segui il percorso qui sotto:",
   "Key is invalid, please ensure that you have set up billing in your OpenAI account!": "Chiave non valida, assicurati di aver impostato la fatturazione nel tuo account OpenAI!",
-  "Higher values will make the output more random, while lower values make the output more focused and deterministic.": "Valori più alti renderanno l'output più casuale, mentre valori più bassi renderanno l'output più focalizzato e deter
+  "Higher values will make the output more random, while lower values make the output more focused and deterministic.": "Valori più alti renderanno l'output più casuale, mentre valori più bassi renderanno l'output più focalizzato e deterministico.",
+  "Controls the maximum number of loops that the agent will run (higher value will make more API calls).": "Controlla il numero massimo di cicli che l'agente eseguirà (un valore più alto comporterà più chiamate API).",
+  "Settings ⚙": "Impostazioni ⚙",
+  "Here you can add your OpenAI API key. This will require you to pay for your own OpenAI usage but give you greater access to AgentGPT! You can additionally select any model OpenAI off
