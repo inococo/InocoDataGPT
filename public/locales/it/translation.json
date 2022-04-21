@@ -31,4 +31,10 @@
   "Here you can add your OpenAI API key. This will require you to pay for your own OpenAI usage but give you greater access to AgentGPT! You can additionally select any model OpenAI offers.": "Qui puoi aggiungere la tua chiave API OpenAI. Ciò richiederà il pagamento per l'utilizzo di OpenAI, ma ti darà un accesso maggiore ad AgentGPT! Inoltre, puoi selezionare qualsiasi modello offerto da OpenAI.",
   "To use the GPT-4 model, you need to also provide the API key for GPT-4. You can request for it": "Per utilizzare il modello GPT-4, è necessario fornire anche la chiave API per GPT-4. Puoi richiederla",
   "here": "qui",
-  "(ChatGPT Plus subscription will not work)": "(L
+  "(ChatGPT Plus subscription will not work)": "(La sottoscrizione ChatGPT Plus non funzionerà)",
+  "Model: ": "Modello: ",
+  "Key: ": "Chiave: ",
+  "Advanced Settings": "Impostazioni avanzate",
+  "NOTE: To get a key, sign up for an OpenAI account and visit the following": "NOTA: Per ottenere una chiave, registrati per un account OpenAI e visita il seguente",
+  "link": "link",
+  "This key is only used in the current browser session": "Questa chiave viene utilizzata solo nella sessione del browser
