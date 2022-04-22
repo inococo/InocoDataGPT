@@ -48,3 +48,7 @@
   "Stop Agent": "Arresta agente",
   "Make the world a better place.": "Fai del mondo un posto migliore.",
   "Select language": "Seleziona la lingua",
+  "Task marked as complete.": "Compito segnato come completato.",
+  "ERROR adding additional task(s). It might have been against our model's policies to run them. Continuing.": "ERRORE nell'aggiunta di compiti aggiuntivi. Potrebbe essere contrario alle politiche del nostro modello eseguirli. Continuando.",
+  "Rate limit exceeded. Please slow down. 😅": "Limite di velocità superato. Per favore rallenta. 😅",
+  "This agent has maxed out on loops
