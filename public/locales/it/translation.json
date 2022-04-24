@@ -52,4 +52,6 @@
   "ERROR adding additional task(s). It might have been against our model's policies to run them. Continuing.": "ERRORE nell'aggiunta di compiti aggiuntivi. Potrebbe essere contrario alle politiche del nostro modello eseguirli. Continuando.",
   "Rate limit exceeded. Please slow down. 😅": "Limite di velocità superato. Per favore rallenta. 😅",
   "This agent has maxed out on loops. To save your wallet, this agent is shutting down. You can configure the number of loops in the advanced settings.": "Questo agente ha raggiunto il numero massimo di cicli. Per salvaguardare il tuo portafoglio, questo agente si sta spegnendo. È possibile configurare il numero di cicli nelle impostazioni avanzate.",
-  "We're sorry, because this is a demo, we cannot have our agents running for too long. Note, if you desire lon
+  "We're sorry, because this is a demo, we cannot have our agents running for too long. Note, if you desire longer runs, please provide your own API key in Settings. Shutting down.": "Ci dispiace, poiché si tratta di una demo, non possiamo far funzionare i nostri agenti per troppo tempo. Nota che se desideri esecuzioni più lunghe, fornisci la tua chiave API in Impostazioni. Spegnimento.",
+  "The agent has been manually shutdown.": "L'agente è stato spento manualmente.",
+  "All tasks completed. Shutting down.": "Tutti i compiti completati. Spegnimen
