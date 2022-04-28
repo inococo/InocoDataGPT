@@ -58,4 +58,8 @@
   "ERROR accessing OpenAI APIs. Please check your API key or try again later": "ERRORE nell'accesso alle API di OpenAI. Controlla la tua chiave API o riprova più tardi.",
   "ERROR using your OpenAI API key. You've exceeded your current quota, please check your plan and billing details.": "ERRORE nell'uso della tua chiave API di OpenAI. Hai superato la tua quota attuale, controlla il tuo piano e i dettagli della fatturazione.",
   "ERROR your API key does not have GPT-4 access. You must first join OpenAI's wait-list. (This is different from ChatGPT Plus)": "ERRORE la tua chiave API non ha accesso a GPT-4. Devi prima iscriverti alla lista di attesa di OpenAI. (Questo è diverso da ChatGPT Plus)",
-  "ERROR retrieving initial tasks array. Retry, make your goal more clear, or revise your goal such that it is within our model's policies to run. Shutting Down.": "ERRORE nel recupero dell'array di compiti iniziali. Riprova, rendi il tuo obiett
+  "ERROR retrieving initial tasks array. Retry, make your goal more clear, or revise your goal such that it is within our model's policies to run. Shutting Down.": "ERRORE nel recupero dell'array di compiti iniziali. Riprova, rendi il tuo obiettivo più chiaro o rivedi il tuo obiettivo in modo che sia conforme alle politiche del nostro modello per essere eseguito. Spegnimento.",
+  "Close": "Chiudi",
+  "Sign in to be able to save agents and manage your account!": "Accedi per poter salvare gli agenti e gestire il tuo account!",
+  "You need to create and save your first agent before anything shows up here!": "Devi creare e salvare il tuo primo agente prima che qualcosa appaia qui!",
+  "Current tasks": 
