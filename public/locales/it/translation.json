@@ -62,4 +62,11 @@
   "Close": "Chiudi",
   "Sign in to be able to save agents and manage your account!": "Accedi per poter salvare gli agenti e gestire il tuo account!",
   "You need to create and save your first agent before anything shows up here!": "Devi creare e salvare il tuo primo agente prima che qualcosa appaia qui!",
-  "Current tasks": 
+  "Current tasks": "Compiti attuali",
+  "Too many requests, please try again later.": "Troppe richieste, per favore riprova più tardi.",
+  "Copied to clipboard! 🚀": "Copiato negli appunti! 🚀",
+  "Agent's Language:": "Lingua dell'agente:",
+  "Export": "Esportare",
+  "Goal: ": "Obiettivo: ",
+  "Adding Task: ": "Aggiunta attività: "
+}
