@@ -1,4 +1,7 @@
 {
   "Select language": "言語を選択してください",
   "Task marked as complete.": "タスクが完了しました。",
-  "ERROR adding additional task(s). It might have been against our mod
+  "ERROR adding additional task(s). It might have been against our model's policies to run them. Continuing.": "追加のタスクを追加中にエラーが発生しました。それらを実行することがモデルのポリシーに反していた可能性があります。続行します。",
+  "Rate limit exceeded. Please slow down. 😅": "レート制限が超過されました。少しスローダウンしてください。😅",
+  "This agent has maxed out on loops. To save your wallet, this agent is shutting down. You can configure the number of loops in the advanced settings.": "このエージェントはループの最大数に達しました。お財布を節約するため、このエージェントはシャットダウンします。詳細設定でループの数を構成できます。",
+  "We're sorry, because this is a
