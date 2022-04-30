@@ -4,4 +4,7 @@
   "ERROR adding additional task(s). It might have been against our model's policies to run them. Continuing.": "追加のタスクを追加中にエラーが発生しました。それらを実行することがモデルのポリシーに反していた可能性があります。続行します。",
   "Rate limit exceeded. Please slow down. 😅": "レート制限が超過されました。少しスローダウンしてください。😅",
   "This agent has maxed out on loops. To save your wallet, this agent is shutting down. You can configure the number of loops in the advanced settings.": "このエージェントはループの最大数に達しました。お財布を節約するため、このエージェントはシャットダウンします。詳細設定でループの数を構成できます。",
-  "We're sorry, because this is a
+  "We're sorry, because this is a demo, we cannot have our agents running for too long. Note, if you desire longer runs, please provide your own API key in Settings. Shutting down.": "申し訳ありませんが、これはデモのため、エージェントを長時間実行することはできません。長時間の実行が必要な場合は、設定で独自のAPIキーを提供してください。シャットダウンします。",
+  "The agent has been manually shutdown.": "エージェントは手動でシャットダウンされました。",
+  "All tasks completed. Shutting down.": "すべてのタスクが完了しました。シャットダウンします。",
+  "ERROR accessing OpenAI APIs. Please check your API key or try 
