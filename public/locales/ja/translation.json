@@ -25,4 +25,12 @@
   "Thinking...": "考え中...",
   "Executing:": "実行中：",
   "Close": "閉じる",
-  "Sign in to be able to save agents and manage your a
+  "Sign in to be able to save agents and manage your account!": "エージェントを保存し、アカウントを管理するにはサインインしてください！",
+  "You need to create and save your first agent before anything shows up here!": "ここに何か表示される前に、最初のエージェントを作成して保存する必要があります！",
+  "Help": "ヘルプ",
+  "Sign Out": "サインアウト",
+  "Sign In": "サインイン",
+  "Account": "アカウント",
+  "Go Pro": "プロになる",
+  "Welcome to AgentGPT 🤖": "AgentGPTへようこそ 🤖",
+  "allows you to configure and deploy Autonomous AI agents. Name your custom AI and have it embark o
