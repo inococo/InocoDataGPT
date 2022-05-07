@@ -38,4 +38,7 @@
   "Long term memory 🧠": "長期記憶 🧠",
   "Web browsing 🌐": "ウェブブラウジング 🌐",
   "Interaction with websites and people 👨‍👩‍👦": "ウェブサイトや人々とのやり取り 👨‍👩‍👦",
-  "Fol
+  "Follow the journey below:": "以下のジャーニーに従ってください：",
+  "Key is invalid, please ensure that you have set up billing in your OpenAI account!": "キーが無効です。OpenAIアカウントで請求設定を行っていることを確認してください！",
+  "Higher values will make the output more random, while lower values make the output more focused and deterministic.": "値を大きくすると、出力はよりランダムになりますが、値を小さくすると出力はより焦点を絞り決定的になります。",
+  "Controls the maximum number of loops that the agent will run (higher value will ma
