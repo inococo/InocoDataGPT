@@ -44,4 +44,12 @@
   "Controls the maximum number of loops that the agent will run (higher value will make more API calls).": "エージェントが実行する最大ループ数を制御します（値を大きくすると、より多くのAPI呼び出しが行われます）。",
   "Settings ⚙": "設定 ⚙",
   "Here you can add your OpenAI API key. This will require you to pay for your own OpenAI usage but give you greater access to AgentGPT! You can additionally select any model OpenAI offers.": "ここにOpenAI APIキーを追加できます。これにより、OpenAIの使用料を支払う必要がありますが、AgentGPTへのより大きなアクセス権が得られます！また、OpenAIが提供するどのモデルでも選択できます。",
-  "To use the GPT-4 model, you need to also provide the API ke
+  "To use the GPT-4 model, you need to also provide the API key for GPT-4. You can request for it": "GPT-4モデルを使用するには、GPT-4のAPIキーも提供する必要があります。申請はこちらから",
+  "here": "こちら",
+  "(ChatGPT Plus subscription will not work)": "（ChatGPT Plusのサブスクリプションは動作しません）",
+  "Model: ": "モデル：",
+  "Key: ": "キー：",
+  "Advanced Settings": "高度な設定",
+  "NOTE: To get a key, sign up for an OpenAI account and visit the following": "注意：キーを取得するには、OpenAIアカウントにサインアップして、以下を訪問してください",
+  "link": "リンク",
+  "This key is only used in the current browser session": "
