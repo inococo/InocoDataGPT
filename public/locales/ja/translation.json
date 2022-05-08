@@ -41,4 +41,7 @@
   "Follow the journey below:": "以下のジャーニーに従ってください：",
   "Key is invalid, please ensure that you have set up billing in your OpenAI account!": "キーが無効です。OpenAIアカウントで請求設定を行っていることを確認してください！",
   "Higher values will make the output more random, while lower values make the output more focused and deterministic.": "値を大きくすると、出力はよりランダムになりますが、値を小さくすると出力はより焦点を絞り決定的になります。",
-  "Controls the maximum number of loops that the agent will run (higher value will ma
+  "Controls the maximum number of loops that the agent will run (higher value will make more API calls).": "エージェントが実行する最大ループ数を制御します（値を大きくすると、より多くのAPI呼び出しが行われます）。",
+  "Settings ⚙": "設定 ⚙",
+  "Here you can add your OpenAI API key. This will require you to pay for your own OpenAI usage but give you greater access to AgentGPT! You can additionally select any model OpenAI offers.": "ここにOpenAI APIキーを追加できます。これにより、OpenAIの使用料を支払う必要がありますが、AgentGPTへのより大きなアクセス権が得られます！また、OpenAIが提供するどのモデルでも選択できます。",
+  "To use the GPT-4 model, you need to also provide the API ke
