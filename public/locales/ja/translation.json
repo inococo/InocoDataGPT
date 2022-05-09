@@ -62,4 +62,10 @@
   "Goal:": "目標：",
   "Make the world a better place.": "世界をより良い場所にする。",
   "Agent's Language:": "エージェントの言語：",
-  "Deploy Agent": "エージェントを展開す
+  "Deploy Agent": "エージェントを展開する",
+  "Running": "実行中",
+  "Stopping": "停止中",
+  "Stop Agent": "エージェントを停止する",
+  "Goal: ": "目標: ",
+  "Adding Task: ": "タスクの追加: "
+}
