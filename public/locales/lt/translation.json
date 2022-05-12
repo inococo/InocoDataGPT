@@ -1,4 +1,6 @@
 {
   "Select language": "Pasirinkite kalbą",
   "Task marked as complete.": "Užduotis pažymėta kaip baigta.",
-  "ERROR adding additional task(s). It might have been against our model's policies to run them. Continuing.": "Įvyko klaida pridedant papildomas už
+  "ERROR adding additional task(s). It might have been against our model's policies to run them. Continuing.": "Įvyko klaida pridedant papildomas užduotis. Gali būti, kad jų vykdymas prieštarauja mūsų modelio politikai. Tęsiame.",
+  "Rate limit exceeded. Please slow down. 😅": "Pasiektas užklausų limitas. Prašome sulėtinti. 😅",
+  "This agent has maxed out on loops. To save your wallet, this agent is shutting down. You can configure the number of loops in the advanced settings.": "Šis agentas pasiekė maksimalų kartojimų skaičių. Norėdami sutaupyti pinigų, agentas bus išjungtas. Galite kon
