@@ -3,4 +3,6 @@
   "Task marked as complete.": "Užduotis pažymėta kaip baigta.",
   "ERROR adding additional task(s). It might have been against our model's policies to run them. Continuing.": "Įvyko klaida pridedant papildomas užduotis. Gali būti, kad jų vykdymas prieštarauja mūsų modelio politikai. Tęsiame.",
   "Rate limit exceeded. Please slow down. 😅": "Pasiektas užklausų limitas. Prašome sulėtinti. 😅",
-  "This agent has maxed out on loops. To save your wallet, this agent is shutting down. You can configure the number of loops in the advanced settings.": "Šis agentas pasiekė maksimalų kartojimų skaičių. Norėdami sutaupyti pinigų, agentas bus išjungtas. Galite kon
+  "This agent has maxed out on loops. To save your wallet, this agent is shutting down. You can configure the number of loops in the advanced settings.": "Šis agentas pasiekė maksimalų kartojimų skaičių. Norėdami sutaupyti pinigų, agentas bus išjungtas. Galite konfigūruoti kartojimų skaičių pažangiuose nustatymuose.",
+  "We're sorry, because this is a demo, we cannot have our agents running for too long. Note, if you desire longer runs, please provide your own API key in Settings. Shutting down.": "Atsiprašome, tačiau dėl to, kad tai yra demonstracinė versija, mes negalime leisti savo agentams veikti per ilgai. Jei norite, kad agentai dirbtų ilgiau, prašome nurodyti savo API raktą Nustatymuose. Išjungiama.",
+  "The agent has been manually shutdown.": "Agentas buvo
