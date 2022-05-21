@@ -37,4 +37,7 @@
   "This platform is currently in beta, we are currently working on:": "Ši platforma šiuo metu yra beta versijoje, mes šiuo metu dirbame prie:",
   "Long term memory 🧠": "Ilgaamžė atmintis 🧠",
   "Web browsing 🌐": "Tinklalapių naršymas 🌐",
-  "Interaction with websites and people 👨‍👩‍👦": "Są
+  "Interaction with websites and people 👨‍👩‍👦": "Sąveika su tinklalapiais ir žmonėmis 👨‍👩‍👦",
+  "Follow the journey below:": "Sekite žemiau pateiktą kelionę:",
+  "Key is invalid, please ensure that you have set up billing in your OpenAI account!": "Raktas yra neteisingas, įsitikinkite, kad jūsų OpenAI paskyroje nustatėte sąskaitų faktūras!",
+  "Higher values will make the output more random, while lower values make the output more focused and deterministic.": "Didesnės reikšmės padarys išvestį labiau atsitiktinę, o mažesnės reikšm
