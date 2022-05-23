@@ -40,4 +40,7 @@
   "Interaction with websites and people 👨‍👩‍👦": "Sąveika su tinklalapiais ir žmonėmis 👨‍👩‍👦",
   "Follow the journey below:": "Sekite žemiau pateiktą kelionę:",
   "Key is invalid, please ensure that you have set up billing in your OpenAI account!": "Raktas yra neteisingas, įsitikinkite, kad jūsų OpenAI paskyroje nustatėte sąskaitų faktūras!",
-  "Higher values will make the output more random, while lower values make the output more focused and deterministic.": "Didesnės reikšmės padarys išvestį labiau atsitiktinę, o mažesnės reikšm
+  "Higher values will make the output more random, while lower values make the output more focused and deterministic.": "Didesnės reikšmės padarys išvestį labiau atsitiktinę, o mažesnės reikšmės padarys išvestį fokusuotą ir nuspėjamą.",
+  "Controls the maximum number of loops that the agent will run (higher value will make more API calls).": "Valdo maksimalų kartojimų skaičių, kurį agentas vykdys (didesnė reikšmė reikalauja daugiau API užklausų).",
+  "Settings ⚙": "Nustatymai ⚙",
+  "Here you can add your OpenAI API key. This will require you to pay for your own OpenAI usage but give you greater access to AgentGPT! You can additionall
