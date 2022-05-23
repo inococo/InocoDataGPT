@@ -43,4 +43,7 @@
   "Higher values will make the output more random, while lower values make the output more focused and deterministic.": "Didesnės reikšmės padarys išvestį labiau atsitiktinę, o mažesnės reikšmės padarys išvestį fokusuotą ir nuspėjamą.",
   "Controls the maximum number of loops that the agent will run (higher value will make more API calls).": "Valdo maksimalų kartojimų skaičių, kurį agentas vykdys (didesnė reikšmė reikalauja daugiau API užklausų).",
   "Settings ⚙": "Nustatymai ⚙",
-  "Here you can add your OpenAI API key. This will require you to pay for your own OpenAI usage but give you greater access to AgentGPT! You can additionall
+  "Here you can add your OpenAI API key. This will require you to pay for your own OpenAI usage but give you greater access to AgentGPT! You can additionally select any model OpenAI offers.": "Čia galite pridėti savo OpenAI API raktą. Tai reikės jums sumokėti už savo OpenAI naudojimą, tačiau suteiks didesnį prieigą prie AgentGPT! Be to, galite pasirinkti bet kurį modelį, kurį siūlo OpenAI.",
+  "To use the GPT-4 model, you need to also provide the API key for GPT-4. You can request for it": "Norint naudoti GPT-4 modelį, jums taip pat reikia pateikti GPT-4 API raktą. Jūs galite jį paprašyti čia:",
+  "here": "čia",
+  "(ChatGPT Plus
