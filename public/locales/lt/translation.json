@@ -46,4 +46,10 @@
   "Here you can add your OpenAI API key. This will require you to pay for your own OpenAI usage but give you greater access to AgentGPT! You can additionally select any model OpenAI offers.": "Čia galite pridėti savo OpenAI API raktą. Tai reikės jums sumokėti už savo OpenAI naudojimą, tačiau suteiks didesnį prieigą prie AgentGPT! Be to, galite pasirinkti bet kurį modelį, kurį siūlo OpenAI.",
   "To use the GPT-4 model, you need to also provide the API key for GPT-4. You can request for it": "Norint naudoti GPT-4 modelį, jums taip pat reikia pateikti GPT-4 API raktą. Jūs galite jį paprašyti čia:",
   "here": "čia",
-  "(ChatGPT Plus
+  "(ChatGPT Plus subscription will not work)": "(ChatGPT Plus prenumerata neveiks)",
+  "Model: ": "Modelis: ",
+  "Key: ": "Raktas: ",
+  "Advanced Settings": "Išplėstiniai nustatymai",
+  "NOTE: To get a key, sign up for an OpenAI account and visit the following": "Pastaba: norėdami gauti raktą, užsiregistruokite OpenAI paskyroje ir apsilankykite šiame",
+  "link": "nuoroda",
+  "This key is only used in the current browser session": "Šis
