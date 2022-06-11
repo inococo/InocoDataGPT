@@ -20,4 +20,9 @@
   "Welcome to AgentGPT 🤖": "Welkom bij AgentGPT 🤖",
   "allows you to configure and deploy Autonomous AI agents. Name your custom AI and have it embark on any goal imaginable. It will attempt to reach the goal by thinking of tasks to do, executing them, and learning from the results 🚀": "stelt u in staat om autonome AI-agents te configureren en implementeren. Geef je aangepaste AI een naam en laat deze beginnen aan elk denkbaar doel. Het zal proberen het doel te bereiken door taken te bedenken, ze uit te voeren en te leren van de resultaten 🚀",
   "This platform is currently in beta, we are currently working on:": "Dit platform is momenteel in beta, we werken momenteel aan:",
-  "Long term m
+  "Long term memory 🧠": "Lange termijn geheugen 🧠",
+  "Web browsing 🌐": "Web browsen 🌐",
+  "Interaction with websites and people 👨‍👩‍👦": "Interactie met websites en mensen 👨‍👩‍👦",
+  "Follow the journey below:": "Volg de reis hieronder:",
+  "Key is invalid, please ensure that you have set up billing in your OpenAI account!": "Sleutel is ongeldig, zorg ervoor dat u facturering hebt ingesteld in uw OpenAI-account!",
+  "Higher values will make the output m
