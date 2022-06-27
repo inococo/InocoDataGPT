@@ -25,4 +25,6 @@
   "Interaction with websites and people 👨‍👩‍👦": "Interactie met websites en mensen 👨‍👩‍👦",
   "Follow the journey below:": "Volg de reis hieronder:",
   "Key is invalid, please ensure that you have set up billing in your OpenAI account!": "Sleutel is ongeldig, zorg ervoor dat u facturering hebt ingesteld in uw OpenAI-account!",
-  "Higher values will make the output m
+  "Higher values will make the output more random, while lower values make the output more focused and deterministic.": "Hogere waarden maken de uitvoer meer willekeurig, terwijl lagere waarden de uitvoer meer gefocust en deterministisch maken.",
+  "Controls the maximum number of loops that the agent will run (higher value will make more API calls).": "Regelt het maximale aantal lussen dat de agent zal uitvoeren (een hogere waarde zal meer API-oproepen maken).",
+  "Settings ⚙": "Inste
