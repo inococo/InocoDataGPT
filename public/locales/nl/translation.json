@@ -27,4 +27,6 @@
   "Key is invalid, please ensure that you have set up billing in your OpenAI account!": "Sleutel is ongeldig, zorg ervoor dat u facturering hebt ingesteld in uw OpenAI-account!",
   "Higher values will make the output more random, while lower values make the output more focused and deterministic.": "Hogere waarden maken de uitvoer meer willekeurig, terwijl lagere waarden de uitvoer meer gefocust en deterministisch maken.",
   "Controls the maximum number of loops that the agent will run (higher value will make more API calls).": "Regelt het maximale aantal lussen dat de agent zal uitvoeren (een hogere waarde zal meer API-oproepen maken).",
-  "Settings ⚙": "Inste
+  "Settings ⚙": "Instellingen ⚙",
+  "Here you can add your OpenAI API key. This will require you to pay for your own OpenAI usage but give you greater access to AgentGPT! You can additionally select any model OpenAI offers.": "Hier kunt u uw OpenAI API-sleutel toevoegen. Dit vereist dat u betaalt voor uw eigen OpenAI-gebruik, maar geeft u meer toegang tot AgentGPT! U kunt bovendien elk model selecteren dat OpenAI biedt.",
+  "To use the GPT-4 model, you n
