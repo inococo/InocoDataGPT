@@ -29,4 +29,10 @@
   "Controls the maximum number of loops that the agent will run (higher value will make more API calls).": "Regelt het maximale aantal lussen dat de agent zal uitvoeren (een hogere waarde zal meer API-oproepen maken).",
   "Settings ⚙": "Instellingen ⚙",
   "Here you can add your OpenAI API key. This will require you to pay for your own OpenAI usage but give you greater access to AgentGPT! You can additionally select any model OpenAI offers.": "Hier kunt u uw OpenAI API-sleutel toevoegen. Dit vereist dat u betaalt voor uw eigen OpenAI-gebruik, maar geeft u meer toegang tot AgentGPT! U kunt bovendien elk model selecteren dat OpenAI biedt.",
-  "To use the GPT-4 model, you n
+  "To use the GPT-4 model, you need to also provide the API key for GPT-4. You can request for it": "Om het GPT-4-model te gebruiken, moet u ook de API-sleutel voor GPT-4 verstrekken. U kunt erom vragen",
+  "here": "hier",
+  "(ChatGPT Plus subscription will not work)": "(ChatGPT Plus-abonnement werkt niet)",
+  "Model: ": "Model: ",
+  "Key: ": "Sleutel: ",
+  "Advanced Settings": "Geavanceerde instellingen",
+  "NOTE: To get a key, sign up for an OpenAI account
