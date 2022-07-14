@@ -54,4 +54,6 @@
   "This agent has maxed out on loops. To save your wallet, this agent is shutting down. You can configure the number of loops in the advanced settings.": "Deze agent heeft het maximum aantal loops bereikt. Om je portemonnee te sparen, wordt deze agent afgesloten. Je kunt het aantal loops configureren in de geavanceerde instellingen.",
   "We're sorry, because this is a demo, we cannot have our agents running for too long. Note, if you desire longer runs, please provide your own API key in Settings. Shutting down.": "Onze excuses, omdat dit een demo is, kunnen we onze agents niet te lang laten draaien. Als je langere runs wilt, dien je je eigen API-sleutel te verstrekken in de instellingen. Afsluiten.",
   "The agent has been manually shutdown.": "De agent is handmatig afgesloten.",
-  "All tasks comp
+  "All tasks completed. Shutting down.": "Alle taken zijn voltooid. Afsluiten.",
+  "ERROR accessing OpenAI APIs. Please check your API key or try again later": "FOUT bij het benaderen van OpenAI API's. Controleer je API-sleutel of probeer het later opnieuw.",
+  "ERROR using your OpenAI API key. You've exceeded your current quota, please check your plan and billing details.": "FOUT bij het gebruik van je OpenAI API-sleutel. Je hebt je huidige quota overschreden, controleer je plan en factureringsgegevens
