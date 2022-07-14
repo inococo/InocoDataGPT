@@ -41,4 +41,12 @@
   "Beta 🚀": "Beta 🚀",
   "Assemble, configure, and deploy autonomous AI Agents in your browser.": "Autonome AI-agenten assembleren, configureren en implementeren in uw browser.",
   "Name:": "Naam:",
-  "Goal:":
+  "Goal:": "Doel:",
+  "Deploy Agent": "Agent implementeren",
+  "Running": "Actief",
+  "Stopping": "Stoppen",
+  "Stop Agent": "Agent stoppen",
+  "Make the world a better place.": "Maak de wereld een betere plaats.",
+  "Select language": "Selecteer taal",
+  "Task marked as complete.": "Taak gemarkeerd als voltooid.",
+  "ERROR adding additional task(s). It might have been against our model's policies to run them. Continuing.": "FOUT bij het toevoegen van extra taak(-en). Het kan zijn
