@@ -58,4 +58,7 @@
   "ERROR accessing OpenAI APIs. Please check your API key or try again later": "FOUT bij het benaderen van OpenAI API's. Controleer je API-sleutel of probeer het later opnieuw.",
   "ERROR using your OpenAI API key. You've exceeded your current quota, please check your plan and billing details.": "FOUT bij het gebruik van je OpenAI API-sleutel. Je hebt je huidige quota overschreden, controleer je plan en factureringsgegevens.",
   "ERROR your API key does not have GPT-4 access. You must first join OpenAI's wait-list. (This is different from ChatGPT Plus)": "FOUT: je API-sleutel heeft geen toegang tot GPT-4. Je moet je eerst aanmelden voor de wachtlijst van OpenAI. (Dit is anders dan ChatGPT Plus)",
-  "ERROR retrieving initial tasks array. Retry, make your goal more clear, or revise your goal such that it is within our model's policies to run. Shutting
+  "ERROR retrieving initial tasks array. Retry, make your goal more clear, or revise your goal such that it is within our model's policies to run. Shutting Down.": "FOUT bij het ophalen van de initiële takenarray. Probeer opnieuw, maak je doel duidelijker of herzie je doel zodat het binnen ons beleid past om het uit te voeren. Afsluiten.",
+  "Close": "Sluiten",
+  "Sign in to be able to save agents and manage your account!": "Log in om agents op te slaan en je account te beheren!",
+  "You need to create and save your first agent before anything shows up here!": "Je moet eerst je eerste agent maken en o
