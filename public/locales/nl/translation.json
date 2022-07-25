@@ -61,4 +61,12 @@
   "ERROR retrieving initial tasks array. Retry, make your goal more clear, or revise your goal such that it is within our model's policies to run. Shutting Down.": "FOUT bij het ophalen van de initiële takenarray. Probeer opnieuw, maak je doel duidelijker of herzie je doel zodat het binnen ons beleid past om het uit te voeren. Afsluiten.",
   "Close": "Sluiten",
   "Sign in to be able to save agents and manage your account!": "Log in om agents op te slaan en je account te beheren!",
-  "You need to create and save your first agent before anything shows up here!": "Je moet eerst je eerste agent maken en o
+  "You need to create and save your first agent before anything shows up here!": "Je moet eerst je eerste agent maken en opslaan voordat er iets verschijnt!",
+  "Current tasks": "Huidige taken",
+  "Too many requests, please try again later.": "Te veel verzoeken, probeer later opnieuw.",
+  "Copied to clipboard! 🚀": "Gekopieerd naar het klembord! 🚀",
+  "Agent's Language:": "Taal van de agent:",
+  "Export": "Exporteren",
+  "Goal: ": "Doel: ",
+  "Adding Task: ": "Taak toevoegen: "
+}
