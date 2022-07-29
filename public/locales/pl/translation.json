@@ -10,3 +10,6 @@
   "ERROR accessing OpenAI APIs. Please check your API key or try again later": "BŁĄD podczas dostępu do OpenAI API. Sprawdź klucz API lub spróbuj ponownie później.",
   "ERROR using your OpenAI API key. You've exceeded your current quota, please check your plan and billing details.": "BŁĄD podczas korzystania z klucza API OpenAI. Przekroczyłeś swoją obecną limit. Sprawdź swój plan i szczegóły dotyczące rozliczeń.",
   "ERROR your API key does not have GPT-4 access. You must first join OpenAI's wait-list. (This is different from ChatGPT Plus)": "BŁĄD Twój klucz API nie ma dostępu do GPT-4. Najpierw musisz dołączyć do listy oczekujących OpenAI. (To różni się od ChatGPT Plus)",
+  "ERROR retrieving initial tasks array. Retry, make your goal more clear, or revise your goal such that it is within our model's policies to run. Shutting Down.": "BŁĄD podczas pobierania początkowej tablicy zadań. Spróbuj ponownie, sprecyzuj swój cel lub zmodyfikuj go tak, aby był zgodny z naszymi zasadami. Zamykamy.",
+  "> Create an agent by adding a name / goal, and hitting deploy!": "Utwórz agenta, dodając nazwę / cel i naciśnij przycisk \"deploy\"!",
+  "YO
