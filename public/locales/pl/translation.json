@@ -4,4 +4,8 @@
   "ERROR adding additional task(s). It might have been against our model's policies to run them. Continuing.": "BŁĄD podczas dodawania dodatkowych zadań. Być może było to niezgodne z politykami naszego modelu. Kontynuujemy.",
   "Rate limit exceeded. Please slow down. 😅": "Przekroczono limit szybkości. Proszę zwolnić. 😅",
   "This agent has maxed out on loops. To save your wallet, this agent is shutting down. You can configure the number of loops in the advanced settings.": "Ten agent osiągnął maksymalną liczbę pętli. Aby oszczędzić portfel, ten agent zostanie wyłączony. Możesz skonfigurować liczbę pętli w ustawieniach zaawansowanych.",
-  "We're sorry, because this is a demo, we cannot have our agents running for too long. Note, if you desire longer runs, please provide your own API key in Settings. Shutting down.": "Przepraszamy, ale ponieważ to jest demo, nie możemy pozwolić na długi czas pracy agentów. Jeśli chcesz uruchamiać dłuższe sesje, proszę podać swój
+  "We're sorry, because this is a demo, we cannot have our agents running for too long. Note, if you desire longer runs, please provide your own API key in Settings. Shutting down.": "Przepraszamy, ale ponieważ to jest demo, nie możemy pozwolić na długi czas pracy agentów. Jeśli chcesz uruchamiać dłuższe sesje, proszę podać swój własny klucz API w ustawieniach. Zamykamy.",
+  "The agent has been manually shutdown.": "Agent został ręcznie wyłączony.",
+  "All tasks completed. Shutting down.": "Wszystkie zadania wykonane. Zamykamy.",
+  "ERROR accessing OpenAI APIs. Please check your API key or try again later": "BŁĄD podczas dostępu do OpenAI API. Sprawdź klucz API lub spróbuj ponownie później.",
+  "ERROR using your OpenAI API key. You've exceeded your current quota, please che
