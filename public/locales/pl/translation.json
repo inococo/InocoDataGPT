@@ -12,4 +12,12 @@
   "ERROR your API key does not have GPT-4 access. You must first join OpenAI's wait-list. (This is different from ChatGPT Plus)": "BŁĄD Twój klucz API nie ma dostępu do GPT-4. Najpierw musisz dołączyć do listy oczekujących OpenAI. (To różni się od ChatGPT Plus)",
   "ERROR retrieving initial tasks array. Retry, make your goal more clear, or revise your goal such that it is within our model's policies to run. Shutting Down.": "BŁĄD podczas pobierania początkowej tablicy zadań. Spróbuj ponownie, sprecyzuj swój cel lub zmodyfikuj go tak, aby był zgodny z naszymi zasadami. Zamykamy.",
   "> Create an agent by adding a name / goal, and hitting deploy!": "Utwórz agenta, dodając nazwę / cel i naciśnij przycisk \"deploy\"!",
-  "YO
+  "YOU_CAN_PROVIDE_YOUR_OWN_OPENAI_KEY": "Możesz podać swój własny klucz API OpenAI w zakładce ustawień, aby zwiększyć limity!",
+  "Save": "Zapisz",
+  "Image": "Obraz",
+  "Copy": "Skopiuj",
+  "HELP_SUPPORT_THE_ADVANCEMENT_OF_AGENTGPT": "Pomóż w rozwoju AgentGPT. ",
+  "Please consider sponsoring the project on GitHub.": "Proszę rozważ wsparcie projektu na GitHubie.",
+  "Support now 🚀": "Wsparcie teraz 🚀",
+  "Embarking on a new goal:": "Rozpoczęcie nowego celu:",
+  "Added task:": "Dodano zadanie:",
