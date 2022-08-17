@@ -43,4 +43,11 @@
   "Controls the maximum number of loops that the agent will run (higher value will make more API calls).": "Kontroluje maksymalną liczbę pętli, jakie agent będzie wykonywał (wyższa wartość spowoduje wykonanie większej liczby wywołań API).",
   "Settings ⚙": "Ustawienia ⚙",
   "Here you can add your OpenAI API key. This will require you to pay for your own OpenAI usage but give you greater access to AgentGPT! You can additionally select any model OpenAI offers.": "Tutaj możesz dodać swój klucz API OpenAI. Będzie to wymagało opłacania korzystania z OpenAI, ale zapewni Ci większy dostęp do AgentGPT! Dodatkowo możesz wybrać dowolny model oferowany przez OpenAI.",
-  "To use the GPT-4 model, you need to also provide the API key for GPT-4. You can request for 
+  "To use the GPT-4 model, you need to also provide the API key for GPT-4. You can request for it": "Aby użyć modelu GPT-4, musisz również podać klucz API dla GPT-4. Możesz go poprosić",
+  "here": "tutaj",
+  "(ChatGPT Plus subscription will not work)": "(Subskrypcja ChatGPT Plus nie będzie działać)",
+  "Model: ": "Model: ",
+  "Key: ": "Klucz: ",
+  "Advanced Settings": "Zaawansowane ustawienia",
+  "NOTE: To get a key, sign up for an OpenAI account and visit the following": "UWAGA: Aby uzyskać klucz, zarejestruj się na koncie OpenAI i odwiedź następujący",
+  "link": "
