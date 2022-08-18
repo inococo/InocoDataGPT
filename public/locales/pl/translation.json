@@ -50,4 +50,9 @@
   "Key: ": "Klucz: ",
   "Advanced Settings": "Zaawansowane ustawienia",
   "NOTE: To get a key, sign up for an OpenAI account and visit the following": "UWAGA: Aby uzyskać klucz, zarejestruj się na koncie OpenAI i odwiedź następujący",
-  "link": "
+  "link": "odnośnik",
+  "This key is only used in the current browser session": "Ten klucz jest używany tylko w bieżącej sesji przeglądarki",
+  "Current tasks": "Aktualne zadania",
+  "Assemble, configure, and deploy autonomous AI Agents in your browser.": "Montuj, konfiguruj i wdrażaj autonomicznych Agentów AI w przeglądarce.",
+  "Too many requests, please try again later.": "Zbyt wiele żądań, spróbuj ponownie później.",
+  "Copied 
