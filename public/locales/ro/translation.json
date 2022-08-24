@@ -6,4 +6,6 @@
   "This agent has maxed out on loops. To save your wallet, this agent is shutting down. You can configure the number of loops in the advanced settings.": "Acest agent a atins numărul maxim de iterații. Pentru a economisi bani, acest agent se va închide. Puteți configura numărul de iterații în setările avansate.",
   "We're sorry, because this is a demo, we cannot have our agents running for too long. Note, if you desire longer runs, please provide your own API key in Settings. Shutting down.": "Ne pare rău, pentru că acesta este un demo, nu putem lăsa agenții noștri să ruleze prea mult timp. Dacă doriți rulări mai lungi, vă rugăm să furnizați propriul dvs. cheie API în Setări. Se închide.",
   "The agent has been manually shutdown.": "Agenții au fost închisi manual.",
-  "All tasks completed. Shutting down.": "Toate sarcinil
+  "All tasks completed. Shutting down.": "Toate sarcinile au fost finalizate. Se închide.",
+  "ERROR accessing OpenAI APIs. Please check your API key or try again later": "EROARE la accesarea API-urilor OpenAI. Vă rugăm să verificați cheia API sau încercați mai târziu.",
+  "ERROR using your OpenAI API key. You've exceeded your current quota, please check your plan and billing details.": "EROARE la utilizarea cheii dvs. API OpenAI. Ați depășit cota curentă, vă rugăm să verificați planul și detaliile de facturar
