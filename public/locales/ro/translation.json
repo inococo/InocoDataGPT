@@ -8,4 +8,6 @@
   "The agent has been manually shutdown.": "Agenții au fost închisi manual.",
   "All tasks completed. Shutting down.": "Toate sarcinile au fost finalizate. Se închide.",
   "ERROR accessing OpenAI APIs. Please check your API key or try again later": "EROARE la accesarea API-urilor OpenAI. Vă rugăm să verificați cheia API sau încercați mai târziu.",
-  "ERROR using your OpenAI API key. You've exceeded your current quota, please check your plan and billing details.": "EROARE la utilizarea cheii dvs. API OpenAI. Ați depășit cota curentă, vă rugăm să verificați planul și detaliile de facturar
+  "ERROR using your OpenAI API key. You've exceeded your current quota, please check your plan and billing details.": "EROARE la utilizarea cheii dvs. API OpenAI. Ați depășit cota curentă, vă rugăm să verificați planul și detaliile de facturare.",
+  "ERROR your API key does not have GPT-4 access. You must first join OpenAI's wait-list. (This is different from ChatGPT Plus)": "EROARE cheia dvs. API nu are acces la GPT-4. Trebuie să vă înscrieți mai întâi în lista de așteptare OpenAI. (Acest lucru este diferit de ChatGPT Plus)",
+  "ERROR retrieving initial tasks array. Retry, make your goal more clear, or revise your goal such that it is within our model's policies to run. Shutting Down.": "EROARE la p
