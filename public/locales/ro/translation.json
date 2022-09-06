@@ -46,3 +46,10 @@
   "Here you can add your OpenAI API key. This will require you to pay for your own OpenAI usage but give you greater access to AgentGPT! You can additionally select any model OpenAI offers.": "Aici poti adauga cheia ta API OpenAI. Acest lucru va necesita plata utilizarii tale OpenAI, dar iti va oferi un acces mai mare la AgentGPT! Poti de asemenea sa selectezi orice model OpenAI ofera.",
   "To use the GPT-4 model, you need to also provide the API key for GPT-4. You can request for it": "Pentru a utiliza modelul GPT-4, trebuie sa furnizezi si cheia API pentru GPT-4. O poti solicita",
   "here": "aici",
+  "(ChatGPT Plus subscription will not work)": "(Abonamentul ChatGPT Plus nu va functiona)",
+  "Model: ": "Model: ",
+  "Key: ": "Cheie: ",
+  "Advanced Settings": "Setari avansate",
+  "NOTE: To get a key, sign up for an OpenAI account and visit the following": "NOTA: Pentru a obtine o cheie, inscrie-te la un cont OpenAI si viziteaza urmatorul",
+  "link": "link",
+  "This key is only used in the current browser session": "Aceasta cheie este folosita doar in s
