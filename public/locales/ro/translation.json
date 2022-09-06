@@ -40,4 +40,7 @@
   "Interaction with websites and people 👨‍👩‍👦": "Interactiune cu site-uri web si oameni 👨‍👩‍👦",
   "Follow the journey below:": "Urmareste calatoria mai jos:",
   "Key is invalid, please ensure that you have set up billing in your OpenAI account!": "Cheia este invalida, asigura-te ca ai setat facturarea in contul tau OpenAI!",
-  "Higher values will make the output more random, while lower values make the output more focused and deterministic.": "Valori mai mari vor face ca rezultatul sa fie mai aleator, 
+  "Higher values will make the output more random, while lower values make the output more focused and deterministic.": "Valori mai mari vor face ca rezultatul sa fie mai aleator, in timp ce valori mai mici vor face ca rezultatul sa fie mai concentrat si determinist.",
+  "Controls the maximum number of loops that the agent will run (higher value will make more API calls).": "Controleaza numarul maxim de bucle pe care le va rula agentul (valoarea mai mare va face mai multe apeluri API).",
+  "Settings ⚙": "Setari ⚙",
+  "Here you can add your OpenAI API key. This will require you to pay for your own OpenAI usage but give you greater acce
