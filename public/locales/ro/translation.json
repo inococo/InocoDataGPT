@@ -43,4 +43,6 @@
   "Higher values will make the output more random, while lower values make the output more focused and deterministic.": "Valori mai mari vor face ca rezultatul sa fie mai aleator, in timp ce valori mai mici vor face ca rezultatul sa fie mai concentrat si determinist.",
   "Controls the maximum number of loops that the agent will run (higher value will make more API calls).": "Controleaza numarul maxim de bucle pe care le va rula agentul (valoarea mai mare va face mai multe apeluri API).",
   "Settings ⚙": "Setari ⚙",
-  "Here you can add your OpenAI API key. This will require you to pay for your own OpenAI usage but give you greater acce
+  "Here you can add your OpenAI API key. This will require you to pay for your own OpenAI usage but give you greater access to AgentGPT! You can additionally select any model OpenAI offers.": "Aici poti adauga cheia ta API OpenAI. Acest lucru va necesita plata utilizarii tale OpenAI, dar iti va oferi un acces mai mare la AgentGPT! Poti de asemenea sa selectezi orice model OpenAI ofera.",
+  "To use the GPT-4 model, you need to also provide the API key for GPT-4. You can request for it": "Pentru a utiliza modelul GPT-4, trebuie sa furnizezi si cheia API pentru GPT-4. O poti solicita",
+  "here": "aici",
