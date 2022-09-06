@@ -37,4 +37,7 @@
   "This platform is currently in beta, we are currently working on:": "Aceasta platforma este in prezent in versiune beta, lucram in prezent la:",
   "Long term memory 🧠": "Memorie pe termen lung 🧠",
   "Web browsing 🌐": "Navigare web 🌐",
-  "Interaction with websites and people 👨‍👩‍👦": "Int
+  "Interaction with websites and people 👨‍👩‍👦": "Interactiune cu site-uri web si oameni 👨‍👩‍👦",
+  "Follow the journey below:": "Urmareste calatoria mai jos:",
+  "Key is invalid, please ensure that you have set up billing in your OpenAI account!": "Cheia este invalida, asigura-te ca ai setat facturarea in contul tau OpenAI!",
+  "Higher values will make the output more random, while lower values make the output more focused and deterministic.": "Valori mai mari vor face ca rezultatul sa fie mai aleator, 
