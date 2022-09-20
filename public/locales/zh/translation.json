@@ -18,4 +18,11 @@
   "Account": "帐户",
   "Go Pro": "升级 Pro",
   "Welcome to AgentGPT 🤖": "欢迎使用 AgentGPT 🤖",
-  "allows you to configure and deploy Autonomous AI agents. Name your custom AI and have it embark on any goal imaginable. It will attempt to reach the goal by thinking of tasks to do, executing them, and learning from the results 🚀": "允许您配置和部署自主 AI 代理。命名
+  "allows you to configure and deploy Autonomous AI agents. Name your custom AI and have it embark on any goal imaginable. It will attempt to reach the goal by thinking of tasks to do, executing them, and learning from the results 🚀": "允许您配置和部署自主 AI 代理。命名您的自定义 AI 并让它开始追求任何可想象的目标。它将尝试通过思考、执行任务并从结果中学习来实现目标 🚀",
+  "This platform is currently in beta, we are currently working on:": "此平台目前处于测试阶段，我们目前正在进行以下工作：",
+  "Long term memory 🧠": "长期记忆 🧠",
+  "Web browsing 🌐": "浏览网页 🌐",
+  "Interaction with websites and people 👨‍👩‍👦": "与网站和人的互动 👨‍👩‍👦",
+  "Follow the journey below:": "请关注以下旅程：",
+  "Key is invalid, please ensure that you have set up billing in your OpenAI account!": "密钥无效，请确保在您的OpenAI帐户中设置了帐单！",
+ 
