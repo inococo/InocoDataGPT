@@ -46,4 +46,9 @@
   "Running": "运行中",
   "Stopping": "停止中",
   "Stop Agent": "停止代理",
-  "Make the world 
+  "Make the world a better place.": "让世界变得更美好。",
+  "Select language": "选择语言",
+  "Task marked as complete.": "任务标记为已完成。",
+  "ERROR adding additional task(s). It might have been against our model's policies to run them. Continuing.": "添加其他任务时出错。可能违反了我们的模型政策，正在继续。",
+  "Rate limit exceeded. Please slow down. 😅": "速率限制已超过。请减慢速度。😅",
+  "This agent has maxed out on loops. To save your wallet, this agent is shutting down. You can configure the number of loops in the advanced setting
