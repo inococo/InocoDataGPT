@@ -58,4 +58,10 @@
   "ERROR accessing OpenAI APIs. Please check your API key or try again later": "访问 OpenAI API 时出错。请检查您的 API 密钥或稍后再试",
   "ERROR using your OpenAI API key. You've exceeded your current quota, please check your plan and billing details.": "使用您的 OpenAI API 密钥时出错。您已超出当前配额，请检查您的计划和结算明细。",
   "ERROR your API key does not have GPT-4 access. You must first join OpenAI's wait-list. (This is different from ChatGPT Plus)": "您的 API 密钥没有 GPT-4 访问权限。您必须先加入 OpenAI 的等待名单。（这与 ChatGPT Plus 不同）",
-  "E
+  "ERROR retrieving initial tasks array. Retry, make your goal more clear, or revise your goal such that it is within our model's policies to run. Shutting Down.": "检索初始任务数组时出错。重试，使您的目标更明确，或修改您的目标，使其符合我们的模型政策。关闭中。",
+  "Agent's Language:": "代理程序语言：",
+  "Export": "导出",
+  "Close": "关闭",
+  "Sign in to be able to save agents and manage your account!": "请登录以保存代理并管理您的帐户！",
+  "You need to create and save your first agent before anything shows up here!": "在此显示任何内容之前，您需要创建并保存您的第一个代理！",
+ 
