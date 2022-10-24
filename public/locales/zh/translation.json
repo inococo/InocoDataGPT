@@ -51,4 +51,8 @@
   "Task marked as complete.": "任务标记为已完成。",
   "ERROR adding additional task(s). It might have been against our model's policies to run them. Continuing.": "添加其他任务时出错。可能违反了我们的模型政策，正在继续。",
   "Rate limit exceeded. Please slow down. 😅": "速率限制已超过。请减慢速度。😅",
-  "This agent has maxed out on loops. To save your wallet, this agent is shutting down. You can configure the number of loops in the advanced setting
+  "This agent has maxed out on loops. To save your wallet, this agent is shutting down. You can configure the number of loops in the advanced settings.": "此代理程序已达到循环次数上限。为节省您的钱包，此代理程序正在关闭。您可以在高级设置中配置循环次数。",
+  "We're sorry, because this is a demo, we cannot have our agents running for too long. Note, if you desire longer runs, please provide your own API key in Settings. Shutting down.": "很抱歉，因为这是一个演示版本，我们不能让我们的代理程序运行太长时间。请注意，如果您需要更长的运行时间，请在设置中提供您自己的 API 密钥。关闭中。",
+  "The agent has been manually shutdown.": "代理程序已被手动关闭。",
+  "All tasks completed. Shutting down.": "所有任务已完成。关闭中。",
+  "ERROR accessing OpenA
