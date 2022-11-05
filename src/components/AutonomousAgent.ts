@@ -98,4 +98,21 @@ class AutonomousAgent {
       return;
     }
 
-    t
+    this.numLoops += 1;
+    const maxLoops = this.maxLoops();
+    if (this.numLoops > maxLoops) {
+      this.sendLoopMessage();
+      this.shutdown();
+      return;
+    }
+
+    // Wait before starting
+    await sleep(TIMEOUT_LONG);
+
+    // Execute first task
+    // Get and remove first task
+    this.completedTasks.push(this.tasks[0] || "");
+    const currentTask = this.tasks.shift();
+    this.sendThinkingMessage();
+
+    const result = await this.executeTask
