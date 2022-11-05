@@ -57,4 +57,20 @@ class AutonomousAgent {
 
       this.sendSqlMessage(data.sql);
       this.sendSqlTableMessage(data.result);
-    
+    } catch (e) {
+      console.log(e);
+      this.sendErrorMessage(getMessageFromError(e));
+    }
+    this.stopAgentSliently();
+
+    // Comment out auto agents
+    // // Initialize by getting tasks
+    // try {
+    //   // get the broken-down tasks
+    //   this.tasks = await this.getInitialTasks();
+    //   // display task names only
+    //   for (const task of this.tasks) {
+    //     await sleep(TIMOUT_SHORT);
+    //     this.sendTaskMessage(task);
+    //   }
+   
