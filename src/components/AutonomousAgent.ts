@@ -37,4 +37,24 @@ class AutonomousAgent {
     renderMessage: (message: Message) => void,
     shutdown: () => void,
     modelSettings: ModelSettings,
-    session?:
+    session?: Session
+  ) {
+    this.name = name;
+    this.goal = goal;
+    this.renderMessage = renderMessage;
+    this.shutdown = shutdown;
+    this.modelSettings = modelSettings;
+    this.session = session;
+    this._id = v4();
+  }
+
+  async run() {
+    this.sendGoalMessage();
+    this.sendThinkingMessage();
+
+    try {
+      const data = await this.queryDatastore();
+
+      this.sendSqlMessage(data.sql);
+      this.sendSqlTableMessage(data.result);
+    
