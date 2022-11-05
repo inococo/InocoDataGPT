@@ -73,4 +73,29 @@ class AutonomousAgent {
     //     await sleep(TIMOUT_SHORT);
     //     this.sendTaskMessage(task);
     //   }
-   
+    // } catch (e) {
+    //   console.log(e);
+    //   this.sendErrorMessage(getMessageFromError(e));
+    //   this.shutdown();
+    //   return;
+    // }
+
+    // // take actions on tasks
+    // await this.loop();
+  }
+
+  async loop() {
+    console.log(`Loop ${this.numLoops}`);
+    console.log('tasks:', this.tasks);
+
+    if (!this.isRunning) {
+      return;
+    }
+
+    if (this.tasks.length === 0) {
+      this.sendCompletedMessage();
+      this.shutdown();
+      return;
+    }
+
+    t
