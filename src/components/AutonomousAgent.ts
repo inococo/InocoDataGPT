@@ -115,4 +115,20 @@ class AutonomousAgent {
     const currentTask = this.tasks.shift();
     this.sendThinkingMessage();
 
-    const result = await this.executeTask
+    const result = await this.executeTask(currentTask as string);
+    this.sendExecutionMessage(currentTask as string, result);
+
+    // Wait before adding tasks
+    await sleep(TIMEOUT_LONG);
+    this.sendThinkingMessage();
+
+    // Add new tasks
+    try {
+      const newTasks = await this.getAdditionalTasks(
+        currentTask as string,
+        result
+      );
+      this.tasks = this.tasks.concat(newTasks);
+      for (const task of newTasks) {
+        await sleep(TIMOUT_SHORT);
+        this.s
