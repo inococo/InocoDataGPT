@@ -131,4 +131,22 @@ class AutonomousAgent {
       this.tasks = this.tasks.concat(newTasks);
       for (const task of newTasks) {
         await sleep(TIMOUT_SHORT);
-        this.s
+        this.sendTaskMessage(task);
+      }
+
+      if (newTasks.length == 0) {
+        this.sendActionMessage("Task marked as complete!");
+      }
+    } catch (e) {
+      console.log(e);
+      this.sendErrorMessage(
+        `ERROR adding additional task(s). It might have been against our model's policies to run them. Continuing.`
+      );
+      this.sendActionMessage("Task marked as complete.");
+    }
+
+    await this.loop();
+  }
+
+  private maxLoops() {
+    const defaultLoops
