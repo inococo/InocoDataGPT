@@ -149,4 +149,20 @@ class AutonomousAgent {
   }
 
   private maxLoops() {
-    const defaultLoops
+    const defaultLoops = !!this.session?.user.subscriptionId
+      ? DEFAULT_MAX_LOOPS_PAID
+      : DEFAULT_MAX_LOOPS_FREE;
+
+    return !!this.modelSettings.customApiKey
+      ? this.modelSettings.customMaxLoops || DEFAULT_MAX_LOOPS_CUSTOM_API_KEY
+      : defaultLoops;
+  }
+
+  async queryDatastore(): Promise<any> {
+    const data = {
+      modelSettings: this.modelSettings,
+      goal: this.goal,
+    };
+    const res = await this.post(`/api/agent/start`, data);
+    console.info("queryDatastore sql:", res.data.sql ?? "");
+    
