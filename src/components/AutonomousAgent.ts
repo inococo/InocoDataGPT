@@ -165,4 +165,14 @@ class AutonomousAgent {
     };
     const res = await this.post(`/api/agent/start`, data);
     console.info("queryDatastore sql:", res.data.sql ?? "");
-    
+    // console.info("queryDatastore result:", res.data.result ?? "");
+
+    // eslint-disable-next-line @typescript-eslint/no-unsafe-member-access,@typescript-eslint/no-unsafe-argument
+    return res.data;
+  }
+
+  async getInitialTasks(): Promise<string[]> {
+    if (this.shouldRunClientSide()) {
+      console.info("getInitialTasks", "inside shouldRunClientSide");
+      if (!env.NEXT_PUBLIC_FF_MOCK_MODE_ENABLED) {
+        console.info("getInitial
