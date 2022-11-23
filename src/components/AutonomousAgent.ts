@@ -175,4 +175,17 @@ class AutonomousAgent {
     if (this.shouldRunClientSide()) {
       console.info("getInitialTasks", "inside shouldRunClientSide");
       if (!env.NEXT_PUBLIC_FF_MOCK_MODE_ENABLED) {
-        console.info("getInitial
+        console.info("getInitialTasks", "testConnection");
+        await testConnection(this.modelSettings);
+      }
+      return await AgentService.startGoalAgent(this.modelSettings, this.goal);
+    }
+
+    const data = {
+      modelSettings: this.modelSettings,
+      goal: this.goal,
+    };
+    const res = await this.post(`/api/agent/start`, data);
+    console.info("getInitialTasks", "post(/api/agent/start)");
+
+    // eslint-disable-next-line @typescript-eslint/no-unsafe-member-access,@
