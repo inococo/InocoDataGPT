@@ -209,4 +209,16 @@ class AutonomousAgent {
 
     const data = {
       modelSettings: this.modelSettings,
-   
+      goal: this.goal,
+      tasks: this.tasks,
+      lastTask: currentTask,
+      result: result,
+      completedTasks: this.completedTasks,
+    };
+    const res = await this.post(`/api/agent/create`, data);
+    // eslint-disable-next-line @typescript-eslint/no-unsafe-argument,@typescript-eslint/no-unsafe-member-access
+    return res.data.newTasks as string[];
+  }
+
+  async executeTask(task: string): Promise<string> {
+    if (this.should
