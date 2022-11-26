@@ -221,4 +221,19 @@ class AutonomousAgent {
   }
 
   async executeTask(task: string): Promise<string> {
-    if (this.should
+    if (this.shouldRunClientSide()) {
+      return await AgentService.executeTaskAgent(
+        this.modelSettings,
+        this.goal,
+        task
+      );
+    }
+
+    const data = {
+      modelSettings: this.modelSettings,
+      goal: this.goal,
+      task: task,
+    };
+    const res = await this.post("/api/agent/execute", data);
+    // eslint-disable-next-line @typescript-eslint/no-unsafe-member-access,@typescript-eslint/no-unsafe-argument
+    return res.data.respo
