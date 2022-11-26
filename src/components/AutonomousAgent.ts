@@ -188,4 +188,25 @@ class AutonomousAgent {
     const res = await this.post(`/api/agent/start`, data);
     console.info("getInitialTasks", "post(/api/agent/start)");
 
-    // eslint-disable-next-line @typescript-eslint/no-unsafe-member-access,@
+    // eslint-disable-next-line @typescript-eslint/no-unsafe-member-access,@typescript-eslint/no-unsafe-argument
+    return res.data.newTasks as string[];
+  }
+
+  async getAdditionalTasks(
+    currentTask: string,
+    result: string
+  ): Promise<string[]> {
+    if (this.shouldRunClientSide()) {
+      return await AgentService.createTasksAgent(
+        this.modelSettings,
+        this.goal,
+        this.tasks,
+        currentTask,
+        result,
+        this.completedTasks
+      );
+    }
+
+    const data = {
+      modelSettings: this.modelSettings,
+   
