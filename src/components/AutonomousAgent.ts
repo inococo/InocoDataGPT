@@ -236,4 +236,26 @@ class AutonomousAgent {
     };
     const res = await this.post("/api/agent/execute", data);
     // eslint-disable-next-line @typescript-eslint/no-unsafe-member-access,@typescript-eslint/no-unsafe-argument
-    return res.data.respo
+    return res.data.response as string;
+  }
+
+  private async post(url: string, data: RequestBody) {
+    try {
+      return await axios.post(url, data);
+    } catch (e) {
+      this.shutdown();
+
+      if (axios.isAxiosError(e) && e.response?.status === 429) {
+        this.sendErrorMessage("Rate limit exceeded. Please slow down. 😅");
+      }
+
+      throw e;
+    }
+  }
+
+  private shouldRunClientSide() {
+    return !!this.modelSettings.customApiKey;
+  }
+
+  stopAgentSliently() {
+    this.isRunning = false;
