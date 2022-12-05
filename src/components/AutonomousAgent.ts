@@ -259,3 +259,29 @@ class AutonomousAgent {
 
   stopAgentSliently() {
     this.isRunning = false;
+    this.shutdown();
+    return;
+  }
+
+  stopAgent() {
+    this.sendManualShutdownMessage();
+    this.isRunning = false;
+    this.shutdown();
+    return;
+  }
+
+  sendMessage(message: Message) {
+    if (this.isRunning) {
+      this.renderMessage(message);
+    }
+  }
+
+  sendGoalMessage() {
+    this.sendMessage({ type: "goal", value: this.goal });
+  }
+
+  sendLoopMessage() {
+    this.sendMessage({
+      type: "system",
+      value: !!this.modelSettings.customApiKey
+    
