@@ -352,4 +352,18 @@ const testConnection = async (modelSettings: ModelSettings) => {
       temperature: 0,
     },
     {
-      heade
+      headers: {
+        "Content-Type": "application/json",
+        Authorization: `Bearer ${modelSettings.customApiKey ?? ""}`,
+      },
+    }
+  );
+};
+
+const getMessageFromError = (e: unknown) => {
+  let message =
+    "ERROR: Service is not available, please try again later";
+  if (axios.isAxiosError(e)) {
+    const axiosError = e;
+    if (axiosError.response?.status === 429) {
+      message = `ERROR using your OpenAI API key. You've exceeded your current quota, please check your plan and b
