@@ -366,4 +366,15 @@ const getMessageFromError = (e: unknown) => {
   if (axios.isAxiosError(e)) {
     const axiosError = e;
     if (axiosError.response?.status === 429) {
-      message = `ERROR using your OpenAI API key. You've exceeded your current quota, please check your plan and b
+      message = `ERROR using your OpenAI API key. You've exceeded your current quota, please check your plan and billing details.`;
+    }
+    if (axiosError.response?.status === 404) {
+      message = `ERROR your API key does not have GPT-4 access. You must first join OpenAI's wait-list. (This is different from ChatGPT Plus)`;
+    }
+  } else {
+    message = `ERROR retrieving initial tasks array. Retry, make your goal more clear, or revise your goal such that it is within our model's policies to run. Shutting Down.`;
+  }
+  return message;
+};
+
+export default Au
