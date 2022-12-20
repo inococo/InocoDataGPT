@@ -377,4 +377,4 @@ const getMessageFromError = (e: unknown) => {
   return message;
 };
 
-export default Au
+export default AutonomousAgent;
