@@ -315,3 +315,25 @@ class AutonomousAgent {
     this.sendMessage({ type: "sqltable", value: "", table: data });
   }
 
+  sendTaskMessage(task: string) {
+    this.sendMessage({ type: "task", value: task });
+  }
+
+  sendErrorMessage(error: string) {
+    this.sendMessage({ type: "system", value: error });
+  }
+
+  sendExecutionMessage(task: string, execution: string) {
+    this.sendMessage({
+      type: "action",
+      info: `Executing "${task}"`,
+      value: execution,
+    });
+  }
+
+  sendActionMessage(message: string) {
+    this.sendMessage({
+      type: "action",
+      info: message,
+      value: "",
+    
