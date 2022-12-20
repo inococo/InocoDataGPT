@@ -292,4 +292,26 @@ class AutonomousAgent {
   sendManualShutdownMessage() {
     this.sendMessage({
       type: "system",
-      val
+      value: `The copilot has been manually shutdown.`,
+    });
+  }
+
+  sendCompletedMessage() {
+    this.sendMessage({
+      type: "system",
+      value: "All tasks completed. Shutting down.",
+    });
+  }
+
+  sendThinkingMessage() {
+    this.sendMessage({ type: "thinking", value: "" });
+  }
+
+  sendSqlMessage(sql: string) {
+    this.sendMessage({ type: "sql", value: sql });
+  }
+
+  sendSqlTableMessage(data: any) {
+    this.sendMessage({ type: "sqltable", value: "", table: data });
+  }
+
