@@ -43,3 +43,21 @@ const Button = forwardRef(
           props.className
         )}
         onClick={onClick}
+      >
+        <div className="flex items-center justify-center">
+          {loading ? (
+            <Loader />
+          ) : (
+            <>
+              {props.icon ? <div className="mr-2">{props.icon}</div> : null}
+              {props.children}
+            </>
+          )}
+        </div>
+      </button>
+    );
+  }
+);
+
+Button.displayName = "Button";
+export default Button;
