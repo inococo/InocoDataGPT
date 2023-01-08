@@ -387,3 +387,28 @@ const getMessageIcon = (message: Message) => {
       return <FaListAlt className="text-gray-300" />;
     case "thinking":
       return <FaCloud className="mt-[0.1em] text-pink-400" />;
+    case "action":
+      return <FaPlayCircle className="text-green-500" />;
+  }
+};
+
+const getMessagePrefix = (message: Message) => {
+  const [ t ] = useTranslation();
+  switch (message.type) {
+    case "goal":
+      return 'Ask:';
+    case "task":
+      return 'Task:';
+    case "sql":
+      return 'SQL:';
+    case "sqltable":
+      return 'Data:';
+    case "thinking":
+      return 'Running...';
+    case "action":
+      return message.info ? message.info : t('Executing:');
+  }
+};
+
+export default ChatWindow;
+export { ChatMessage };
