@@ -29,4 +29,11 @@ export default function Dialog({
       />
       <div className="relative mx-auto my-6 w-auto max-w-3xl rounded-lg border-2 border-zinc-600">
         {/*content*/}
-        <
+        <div
+          className="relative z-50 flex w-full flex-col rounded-lg border-0 bg-[#3a3a3a] shadow-lg outline-none focus:outline-none"
+          onClick={(e) => e.stopPropagation()} // Avoid closing the modal
+        >
+          {/*header*/}
+          <div className="flex items-start justify-between rounded-t border-b-2 border-solid border-white/20 p-5">
+            <h3 className="font-mono text-3xl font-semibold">{header}</h3>
+            <button className="float-right ml-auto border-0
