@@ -46,4 +46,18 @@ export default function Dialog({
           <div className="text-md relative my-3 max-h-[50vh] flex-auto overflow-y-auto p-3 leading-relaxed">
             {children}
           </div>
-        
+          {/*footer*/}
+          <div className="flex items-center justify-end gap-2 rounded-b border-t-2 border-solid border-white/20 p-2">
+            <Button
+              enabledClassName="bg-yellow-600 hover:bg-yellow-500"
+              onClick={close}
+            >
+              {t('Close')}
+            </Button>
+            {footerButton}
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
