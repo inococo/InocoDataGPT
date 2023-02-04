@@ -29,4 +29,18 @@ const Drawer = ({
   showDS,
 }: {
   showHelp: () => void;
-  showSetti
+  showSettings: () => void;
+  showDS: () => void;
+}) => {
+  const [t] = useTranslation();
+  const [showDrawer, setShowDrawer] = useState(true);
+  const { session, signIn, signOut, status } = useAuth();
+  const router = useRouter();
+
+  useEffect(() => {
+    // Function to check if the screen width is for desktop or tablet
+    const checkScreenWidth = () => {
+      const screenWidth = window.innerWidth;
+      if (screenWidth >= 768) {
+        // 768px is the breakpoint for tablet devices
+      
