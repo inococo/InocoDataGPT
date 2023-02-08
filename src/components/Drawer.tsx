@@ -62,4 +62,23 @@ const Drawer = ({
   }, []);
 
   const sub = api.account.subscribe.useMutation({
-    onSuccess
+    onSuccess: async (url: any) => {
+      if (!url) return;
+      await router.push(url);
+    },
+  });
+
+  const query = api.agent.getAll.useQuery(undefined, {
+    enabled: !!session?.user,
+  });
+
+  const manage = api.account.manage.useMutation({
+    onSuccess: async (url: any) => {
+      if (!url) return;
+      await router.push(url);
+    },
+  });
+
+  const toggleDrawer = () => {
+    setShowDrawer((prevState) => !prevState);
+  }
