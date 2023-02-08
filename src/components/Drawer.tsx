@@ -43,4 +43,23 @@ const Drawer = ({
       const screenWidth = window.innerWidth;
       if (screenWidth >= 768) {
         // 768px is the breakpoint for tablet devices
-      
+        setShowDrawer(true);
+      } else {
+        setShowDrawer(false);
+      }
+    };
+
+    // Call the checkScreenWidth function initially
+    checkScreenWidth();
+
+    // Set up an event listener for window resize events
+    window.addEventListener("resize", checkScreenWidth);
+
+    // Clean up the event listener on unmount
+    return () => {
+      window.removeEventListener("resize", checkScreenWidth);
+    };
+  }, []);
+
+  const sub = api.account.subscribe.useMutation({
+    onSuccess
