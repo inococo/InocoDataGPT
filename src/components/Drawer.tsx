@@ -95,4 +95,15 @@ const Drawer = ({
           "fixed top-0 "
         )}
       >
-        <div className="flex flex-col gap-1 overflow-hidden
+        <div className="flex flex-col gap-1 overflow-hidden">
+          <div className="mb-2 flex justify-center gap-2">
+            Saved Sessions
+            <button
+              className={clsx(
+                showDrawer ? "-translate-x-2" : "translate-x-12",
+                "absolute right-0 top-2 z-40 rounded-md border-2 border-white/20 bg-zinc-900 p-2  text-white transition-all hover:bg-zinc-700 "
+              )}
+              onClick={toggleDrawer}
+            >
+              <FaBars />
+            </
