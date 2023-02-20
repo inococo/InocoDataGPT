@@ -106,4 +106,19 @@ const Drawer = ({
               onClick={toggleDrawer}
             >
               <FaBars />
-            </
+            </button>
+          </div>
+          <ul className="flex flex-col gap-2 overflow-auto">
+            {userAgents.map(
+              (agent: any | undefined, index: any | undefined) => (
+                <DrawerItem
+                  key={index}
+                  icon={<FaRobot />}
+                  text={agent.name}
+                  className="w-full"
+                  onClick={() => void router.push(`/agent?id=${agent.id}`)}
+                />
+              )
+            )}
+
+            {false &&
