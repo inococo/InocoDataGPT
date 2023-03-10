@@ -131,4 +131,21 @@ const Drawer = ({
             {false && status === "authenticated" && userAgents.length === 0 && (
               <div>
                 {t(
-                  "You need to configure to connect a data source before anything 
+                  "You need to configure to connect a data source before anything shows up here!"
+                )}
+              </div>
+            )}
+          </ul>
+        </div>
+
+        <div className="flex flex-col gap-1">
+          <hr className="my-2 border-gray-600/10" />
+          {env.NEXT_PUBLIC_FF_SUB_ENABLED ||
+            (router.query.pro && (
+              <ProItem
+                sub={sub.mutate}
+                manage={manage.mutate}
+                session={session}
+              />
+            ))}
+          {env.NEXT_PUBLIC_F
