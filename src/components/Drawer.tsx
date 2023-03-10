@@ -121,4 +121,14 @@ const Drawer = ({
               )
             )}
 
-            {false &&
+            {false && status === "unauthenticated" && (
+              <div>
+                {t(
+                  "Sign in to be able to configure data sources and manage your account!"
+                )}
+              </div>
+            )}
+            {false && status === "authenticated" && userAgents.length === 0 && (
+              <div>
+                {t(
+                  "You need to configure to connect a data source before anything 
