@@ -148,4 +148,20 @@ const Drawer = ({
                 session={session}
               />
             ))}
-          {env.NEXT_PUBLIC_F
+          {env.NEXT_PUBLIC_FF_AUTH_ENABLED && (
+            <AuthItem session={session} signIn={signIn} signOut={signOut} />
+          )}
+          <DrawerItem
+            icon={<FaCog />}
+            text="Settings"
+            onClick={showSettings} />
+          <DrawerItem
+            icon={<FaCloud />}
+            text="Data Sources"
+            onClick={showDS} />
+          <DrawerItem
+            icon={<FaQuestionCircle />}
+            text={t("Help")}
+            onClick={showHelp}
+          />
+          <DrawerItem
