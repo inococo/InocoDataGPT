@@ -165,3 +165,28 @@ const Drawer = ({
             onClick={showHelp}
           />
           <DrawerItem
+            icon={<FaGithub />}
+            text="GitHub"
+            href="https://github.com/aurorain-ai/DataGPT"
+            target="_blank"
+          />
+        </div>
+      </div>
+    </>
+  );
+};
+
+interface DrawerItemProps
+  extends Pick<
+    React.AnchorHTMLAttributes<HTMLAnchorElement>,
+    "href" | "target"
+  > {
+  icon: React.ReactNode;
+  text: string;
+  border?: boolean;
+  onClick?: () => any;
+  className?: string;
+  small?: boolean;
+}
+
+const DrawerItem = (props: Draw
