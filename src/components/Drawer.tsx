@@ -210,4 +210,22 @@ const DrawerItem = (props: DrawerItemProps) => {
   }
 
   return (
-  
+    <button
+      type="button"
+      className={clsx(
+        "flex cursor-pointer flex-row items-center rounded-md p-2 hover:bg-white/5",
+        border && "border-[1px] border-white/20",
+        `${className || ""}`
+      )}
+      onClick={onClick}
+    >
+      {icon}
+      <span className="text-md ml-4">{text}</span>
+    </button>
+  );
+};
+
+const AuthItem: React.FC<{
+  session: Session | null;
+  signIn: () => void;
+  signOut: () =>
