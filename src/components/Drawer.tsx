@@ -189,4 +189,25 @@ interface DrawerItemProps
   small?: boolean;
 }
 
-const DrawerItem = (props: Draw
+const DrawerItem = (props: DrawerItemProps) => {
+  const { icon, text, border, href, target, onClick, className } = props;
+
+  if (href) {
+    return (
+      <a
+        className={clsx(
+          "flex cursor-pointer flex-row items-center rounded-md p-2 hover:bg-white/5",
+          border && "border-[1px] border-white/20",
+          `${className || ""}`
+        )}
+        href={href}
+        target={target ?? "_blank"}
+      >
+        {icon}
+        {!props.small && <span className="text-md ml-4">{text}</span>}
+      </a>
+    );
+  }
+
+  return (
+  
