@@ -228,4 +228,18 @@ const DrawerItem = (props: DrawerItemProps) => {
 const AuthItem: React.FC<{
   session: Session | null;
   signIn: () => void;
-  signOut: () =>
+  signOut: () => void;
+}> = ({ signIn, signOut, session }) => {
+  const [t] = useTranslation();
+  const icon = session?.user ? <FaSignInAlt /> : <FaSignOutAlt />;
+  const text = session?.user ? t("Sign Out") : t("Sign In");
+  const onClick = session?.user ? signOut : signIn;
+
+  return <DrawerItem icon={icon} text={text} onClick={onClick} />;
+};
+
+const ProItem: React.FC<{
+  session: Session | null;
+  sub: () => any;
+  manage: () => any;
+}> = ({ sub, manage, session }) => 
