@@ -261,4 +261,18 @@ const ProItem: React.FC<{
       icon={icon}
       text={text}
       onClick={async () => {
-        if (!session?.user)
+        if (!session?.user) {
+          void (await signIn());
+        }
+
+        if (session?.user.subscriptionId) {
+          void manage();
+        } else {
+          void sub();
+        }
+      }}
+    />
+  );
+};
+
+export default Drawer;
