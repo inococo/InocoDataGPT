@@ -242,4 +242,23 @@ const ProItem: React.FC<{
   session: Session | null;
   sub: () => any;
   manage: () => any;
-}> = ({ sub, manage, session }) => 
+}> = ({ sub, manage, session }) => {
+  const [t] = useTranslation();
+  const text = session?.user?.subscriptionId ? t("Account") : t("Go Pro");
+  let icon = session?.user ? <FaUser /> : <FaRocket />;
+  if (session?.user?.image) {
+    icon = (
+      <img
+        src={session?.user.image}
+        className="h-6 w-6 rounded-full"
+        alt="User Image"
+      />
+    );
+  }
+
+  return (
+    <DrawerItem
+      icon={icon}
+      text={text}
+      onClick={async () => {
+        if (!session?.user)
