@@ -12,3 +12,21 @@ const LanguageCombobox = () => {
   const [actualLanguage, setActualLanguage] = useState(
     findLanguage(i18n.language)
   );
+
+  const handleInputChange = (languageName: string) => {
+    const selectedLanguage = findLanguage(languageName);
+    setActualLanguage(selectedLanguage);
+    handleLanguageChange(selectedLanguage.code);
+  };
+
+  const handleLanguageChange = (value: string) => {
+    const { pathname, asPath, query } = router;
+    router
+      .push({ pathname, query }, asPath, {
+        locale: value,
+      })
+      .catch(console.error);
+  };
+
+  return (
+  
