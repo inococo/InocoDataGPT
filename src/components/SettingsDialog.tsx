@@ -20,4 +20,23 @@ export const SettingsDialog: React.FC<{
   show: boolean;
   close: () => void;
   customSettings: [ModelSettings, (settings: ModelSettings) => void];
-}> = ({ show, close, customSettings: [custo
+}> = ({ show, close, customSettings: [customSettings, setCustomSettings] }) => {
+  const [settings, setSettings] = React.useState<ModelSettings>({
+    ...customSettings,
+  });
+  const [t] = useTranslation();
+
+  useEffect(() => {
+    setSettings(customSettings);
+  }, [customSettings, close]);
+
+  const updateSettings = <Key extends keyof ModelSettings>(
+    key: Key,
+    value: ModelSettings[Key]
+  ) => {
+    setSettings((prev) => {
+      return { ...prev, [key]: value };
+    });
+  };
+
+  function keyIsValid(
