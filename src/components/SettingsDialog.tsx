@@ -76,4 +76,24 @@ export const SettingsDialog: React.FC<{
         type="range"
         toolTipProperties={{
           message: `${t(
-            "Higher values will make the output more random, while lower values make the output m
+            "Higher values will make the output more random, while lower values make the output more focused and deterministic."
+          )}`,
+          disabled: false,
+        }}
+        attributes={{
+          min: 0,
+          max: 1,
+          step: 0.01,
+        }}
+      />
+      <br />
+      <Input
+        left={
+          <>
+            <FaSyncAlt />
+            <span className="ml-2">Loop #: </span>
+          </>
+        }
+        value={settings.customMaxLoops}
+        disabled={disabled}
+        onChange={(e) 
