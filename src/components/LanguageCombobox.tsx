@@ -46,4 +46,10 @@ const LanguageCombobox = () => {
 };
 
 const findLanguage = (nameOrLocale: string): Language => {
-  const selectedLanguage 
+  const selectedLanguage = languages.find(
+    (lang) => lang.code === nameOrLocale || lang.name === nameOrLocale
+  );
+  return selectedLanguage || ENGLISH;
+};
+
+export default LanguageCombobox;
