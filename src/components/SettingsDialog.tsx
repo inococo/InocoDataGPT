@@ -39,4 +39,27 @@ export const SettingsDialog: React.FC<{
     });
   };
 
-  function keyIsValid(
+  function keyIsValid(key: string | undefined) {
+    const pattern = /^sk-[a-zA-Z0-9]{48}$/;
+    return key && pattern.test(key);
+  }
+
+  const handleSave = () => {
+    if (!keyIsValid(settings.customApiKey)) {
+      alert(
+        t(
+          "Key is invalid, please ensure that you have set up billing in your OpenAI account!"
+        )
+      );
+      return;
+    }
+
+    setCustomSettings(settings);
+    close();
+    return;
+  };
+
+  const disabled = !settings.customApiKey;
+  const advancedSettings = (
+    <>
+      
