@@ -62,4 +62,18 @@ export const SettingsDialog: React.FC<{
   const disabled = !settings.customApiKey;
   const advancedSettings = (
     <>
-      
+      <Input
+        left={
+          <>
+            <FaThermometerFull />
+            <span className="ml-2">Temp: </span>
+          </>
+        }
+        value={settings.customTemperature}
+        onChange={(e) =>
+          updateSettings("customTemperature", parseFloat(e.target.value))
+        }
+        type="range"
+        toolTipProperties={{
+          message: `${t(
+            "Higher values will make the output more random, while lower values make the output m
