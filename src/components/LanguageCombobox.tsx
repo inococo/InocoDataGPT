@@ -29,4 +29,21 @@ const LanguageCombobox = () => {
   };
 
   return (
-  
+    <Input
+      left={
+        <>
+          <FaGlobe />
+          <span className="ml-2">Lang:</span>
+        </>
+      }
+      type="combobox"
+      value={actualLanguage.name}
+      onChange={(e) => handleInputChange(e.target.value)}
+      setValue={(e) => handleInputChange(e)}
+      attributes={{ options: languages.map((lang) => lang.name) }}
+    />
+  );
+};
+
+const findLanguage = (nameOrLocale: string): Language => {
+  const selectedLanguage 
