@@ -96,4 +96,23 @@ export const SettingsDialog: React.FC<{
         }
         value={settings.customMaxLoops}
         disabled={disabled}
-        onChange={(e) 
+        onChange={(e) =>
+          updateSettings("customMaxLoops", parseFloat(e.target.value))
+        }
+        type="range"
+        toolTipProperties={{
+          message: `${t(
+            "Controls the maximum number of loops that the agent will run (higher value will make more API calls)."
+          )}`,
+          disabled: false,
+        }}
+        attributes={{
+          min: 1,
+          max: 100,
+          step: 1,
+        }}
+      />
+      <br />
+      <Input
+        left={
+     
