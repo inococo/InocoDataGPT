@@ -115,4 +115,18 @@ export const SettingsDialog: React.FC<{
       <br />
       <Input
         left={
-     
+          <>
+            <FaCoins />
+            <span className="ml-2">Tokens: </span>
+          </>
+        }
+        value={settings.maxTokens ?? 1000}
+        disabled={disabled}
+        onChange={(e) =>
+          updateSettings("maxTokens", parseFloat(e.target.value))
+        }
+        type="range"
+        toolTipProperties={{
+          message:
+            "Controls the maximum number of tokens used in each API call (higher value will make responses more detailed but cost more).",
+ 
