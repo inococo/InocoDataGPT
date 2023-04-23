@@ -149,4 +149,19 @@ export const SettingsDialog: React.FC<{
     >
       <p>
         {t(
-          "Here you can add your OpenAI API key. This will require you to pay for your own OpenAI us
+          "Here you can add your OpenAI API key. This will require you to pay for your own OpenAI usage but give you greater access to AgentGPT! You can additionally select any model OpenAI offers."
+        )}
+      </p>
+      <br />
+      <p
+        className={
+          settings.customModelName === GPT_4
+            ? "rounded-md border-[2px] border-white/10 bg-yellow-300 text-black"
+            : ""
+        }
+      >
+        <FaExclamationCircle className="inline-block" />
+        &nbsp;
+        <b>
+          {t(
+            "To use the GPT-4
