@@ -129,4 +129,24 @@ export const SettingsDialog: React.FC<{
         toolTipProperties={{
           message:
             "Controls the maximum number of tokens used in each API call (higher value will make responses more detailed but cost more).",
- 
+          disabled: false,
+        }}
+        attributes={{
+          min: 200,
+          max: 2000,
+          step: 100,
+        }}
+      />
+    </>
+  );
+
+  return (
+    <Dialog
+      header={t("Settings ⚙")}
+      isShown={show}
+      close={close}
+      footerButton={<Button onClick={handleSave}>Save</Button>}
+    >
+      <p>
+        {t(
+          "Here you can add your OpenAI API key. This will require you to pay for your own OpenAI us
