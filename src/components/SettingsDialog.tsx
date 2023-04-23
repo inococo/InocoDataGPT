@@ -164,4 +164,19 @@ export const SettingsDialog: React.FC<{
         &nbsp;
         <b>
           {t(
-            "To use the GPT-4
+            "To use the GPT-4 model, you need to also provide the API key for GPT-4. You can request for it"
+          )}
+          &nbsp;
+          <a
+            href="https://openai.com/waitlist/gpt-4-api"
+            className="text-blue-500"
+          >
+            {t("here")}
+          </a>
+          .&nbsp; {t("(ChatGPT Plus subscription will not work)")}
+        </b>
+      </p>
+      <br />
+      <div className="text-md relative flex-auto p-2 leading-relaxed">
+        <Input
+          lef
