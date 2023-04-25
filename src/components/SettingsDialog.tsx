@@ -179,4 +179,20 @@ export const SettingsDialog: React.FC<{
       <br />
       <div className="text-md relative flex-auto p-2 leading-relaxed">
         <Input
-          lef
+          left={
+            <>
+              <FaKey />
+              <span className="ml-2">Key: </span>
+            </>
+          }
+          placeholder={"sk-..."}
+          value={settings.customApiKey}
+          onChange={(e) => updateSettings("customApiKey", e.target.value)}
+        />
+        <br className="md:inline" />
+        <LanguageCombobox />
+        <br className="md:inline" />
+        <Input
+          left={
+            <>
+              <FaMicroc
