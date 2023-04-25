@@ -222,4 +222,9 @@ export const SettingsDialog: React.FC<{
           >
             {t("link")}.
           </a>{" "}
-          {t("This key is o
+          {t("This key is only used in the current browser session")}
+        </strong>
+      </div>
+    </Dialog>
+  );
+};
