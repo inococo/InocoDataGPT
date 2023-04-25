@@ -195,4 +195,17 @@ export const SettingsDialog: React.FC<{
         <Input
           left={
             <>
-              <FaMicroc
+              <FaMicrochip />
+              <span className="ml-2">Model:</span>
+            </>
+          }
+          type="combobox"
+          value={settings.customModelName}
+          onChange={() => null}
+          setValue={(e) => updateSettings("customModelName", e)}
+          attributes={{ options: GPT_MODEL_NAMES }}
+          disabled={disabled}
+        />
+        <br className="hidden md:inline" />
+        <Accordion
+          child={advancedSettings}
