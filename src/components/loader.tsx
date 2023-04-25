@@ -13,4 +13,11 @@ const Loader: React.FC<LoaderProps> = ({
   speed = 2,
   lineWeight = 7,
 }) => {
-  return
+  return (
+    <div className={className}>
+      <Ring size={size} speed={speed} color="white" lineWeight={lineWeight} />
+    </div>
+  );
+};
+
+export default Loader;
