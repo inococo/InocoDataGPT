@@ -209,3 +209,17 @@ export const SettingsDialog: React.FC<{
         <br className="hidden md:inline" />
         <Accordion
           child={advancedSettings}
+          name={t("Advanced Settings")}
+        ></Accordion>
+        <br />
+        <strong className="mt-10">
+          {t(
+            "NOTE: To get a key, sign up for an OpenAI account and visit the following"
+          )}{" "}
+          <a
+            href="https://platform.openai.com/account/api-keys"
+            className="text-blue-500"
+          >
+            {t("link")}.
+          </a>{" "}
+          {t("This key is o
