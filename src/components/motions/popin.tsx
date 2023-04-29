@@ -6,4 +6,16 @@ interface MotionProps extends PropsWithChildren {
   delay?: number;
 }
 
-const PopIn = (prop
+const PopIn = (props: MotionProps) => (
+  <motion.div
+    initial={{ scale: 0 }}
+    animate={{ scale: 1 }}
+    transition={{ duration: 0.5, type: "spring", delay: props.delay ?? 0 }}
+    {...props}
+  >
+    {props.children}
+  </motion.div>
+);
+
+PopIn.displayName = "PopIn";
+export default PopIn;
