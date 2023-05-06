@@ -31,4 +31,12 @@ interface MyDocumentProps {
   content: string;
 }
 
-const MyDocument: React.
+const MyDocument: React.FC<MyDocumentProps> = ({ content }) => (
+  <Document>
+    <Page size="A4" style={styles.page}>
+      <Text style={styles.section}>{content}</Text>
+    </Page>
+  </Document>
+);
+
+export default MyDocument;
