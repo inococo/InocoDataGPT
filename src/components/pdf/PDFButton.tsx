@@ -23,4 +23,26 @@ const PDFButton = ({
     link.href = url;
     link.download = "my-document.pdf";
     link.click();
-    URL.revokeOb
+    URL.revokeObjectURL(url);
+  };
+
+  return (
+    <>
+      <WindowButton
+        delay={0.2}
+        onClick={() => {
+          downloadPDF().catch(console.error);
+        }}
+        icon={<FaFilePdf size={12} />}
+        name="PDF"
+      />
+    </>
+  );
+};
+
+const getContent = (messages: Message[]): string => {
+  const [ t ] = useTranslation();
+  // Note "Thinking" messages have no `value` so they show up as new lines
+  return messages
+    .map((message) => {
+      if (message.type =
