@@ -45,4 +45,15 @@ const getContent = (messages: Message[]): string => {
   // Note "Thinking" messages have no `value` so they show up as new lines
   return messages
     .map((message) => {
-      if (message.type =
+      if (message.type == "goal") {
+        return `${t('Goal: ')}${message.value}`;
+      }
+      if (message.type == "task") {
+        return `${t('Adding Task: ')}${message.value}`;
+      }
+      return message.value;
+    })
+    .join("\n");
+};
+
+export default memo(PDFButton);
