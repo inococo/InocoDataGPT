@@ -22,4 +22,9 @@ const Toast = (props: Props) => {
         open={open}
         onOpenChange={setOpen}
         className={clsx(
-          "fixed inset-x-
+          "fixed inset-x-4 bottom-4 z-50 w-auto rounded-2xl shadow-lg md:left-auto md:right-4 md:w-full md:max-w-sm",
+          "radix-state-open:animate-toast-slide-in-bottom md:radix-state-open:animate-toast-slide-in-right",
+          "radix-state-closed:animate-toast-hide",
+          "radix-swipe-direction-right:radix-swipe-end:animate-toast-swipe-out-x",
+          "radix-swipe-direction-right:translate-x-radix-toast-swipe-move-x",
+          "radix-swipe-direction-down:radix-swipe-end:animate-toast-swip
