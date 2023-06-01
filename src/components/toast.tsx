@@ -45,4 +45,14 @@ const Toast = (props: Props) => {
                   <pre className="overflow-hidden text-ellipsis">
                     {props.description}
                   </pre>
-                <
+                </ToastPrimitive.Description>
+              )}
+            </div>
+          </div>
+          <div className="mx-4 flex items-center justify-center py-4">
+            <div className="flex flex-col ">
+              {props.onAction && (
+                <ToastPrimitive.Action
+                  altText="copy"
+                  className="text-md flex w-full items-center justify-center rounded-2xl border border-transparent px-3 py-2 font-medium text-yellow-500 hover:bg-white/20 "
+         
