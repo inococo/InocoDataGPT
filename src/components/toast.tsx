@@ -36,4 +36,13 @@ const Toast = (props: Props) => {
       >
         <div className="flex">
           <div className="flex w-0 flex-1 items-center py-4 pl-5">
-            <
+            <div className="radix w-full">
+              <ToastPrimitive.Title className="font-mono text-lg font-medium text-white">
+                {props.title}
+              </ToastPrimitive.Title>
+              {props.description && (
+                <ToastPrimitive.Description className="dark:text-gray-10 text-md mt-1 rounded-md bg-slate-800/50 p-1 text-white">
+                  <pre className="overflow-hidden text-ellipsis">
+                    {props.description}
+                  </pre>
+                <
