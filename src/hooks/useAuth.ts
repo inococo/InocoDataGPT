@@ -16,4 +16,21 @@ interface Auth {
 }
 
 export function useAuth(): Auth {
-  const { data: session, status
+  const { data: session, status } = useSession();
+
+  useEffect(() => {
+    if (status != "authenticated" || !session?.user) return;
+
+    const user = session.user;
+    z.string()
+      .uuid()
+      .parseAsync(user.email)
+      .then((uuid) => window.localStorage.setItem(UUID_KEY, uuid))
+      .catch(() => undefined);
+  }, [session, status]);
+
+  const handleSignIn = async () => await signIn();
+
+  const handleSignOut = async () => {
+    return await signOut({
+ 
