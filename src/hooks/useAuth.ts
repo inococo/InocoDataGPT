@@ -33,4 +33,14 @@ export function useAuth(): Auth {
 
   const handleSignOut = async () => {
     return await signOut({
- 
+      callbackUrl: "/",
+    }).catch();
+  };
+
+  return {
+    signIn: handleSignIn,
+    signOut: handleSignOut,
+    status,
+    session,
+  };
+}
