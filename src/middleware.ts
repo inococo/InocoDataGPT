@@ -19,4 +19,17 @@ async function shouldRateLimit(request: NextRequest): Promise<boolean> {
   }
 
   const { success } = await rateLimiter.limit(ip);
-  return !succe
+  return !success;
+}
+
+const rateLimitedResponse = () =>
+  new Response("Too many requests, please try again later.", {
+    status: 429,
+  });
+
+// noinspection JSUnusedGlobalSymbols
+export async function middleware(request: NextRequest) {
+  if (await shouldRateLimit(request)) {
+    return rateLimitedResponse();
+  }
+}
