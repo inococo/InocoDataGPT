@@ -15,4 +15,18 @@ const MyApp: AppType<{ session: Session | null }> = ({
   const { i18n } = useTranslation();
 
   useEffect(() => {
-    i18n.on("
+    i18n.on("languageChanged", () => {
+      document.documentElement.lang = i18n.language;
+    });
+    document.documentElement.lang = i18n.language;
+  }, [i18n]);
+
+  return (
+    <SessionProvider session={session}>
+      <Component {...pageProps} />
+      <Analytics />
+    </SessionProvider>
+  );
+};
+
+export default api.withTRPC(appWithTranslation(MyApp, nextI18NextConfig));
