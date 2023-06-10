@@ -11,4 +11,19 @@ import Toast from "../../components/toast";
 import { FaTrash, FaShare, FaBackspace } from "react-icons/fa";
 import { env } from "../../env/client.mjs";
 
-import { useTranslatio
+import { useTranslation } from 'react-i18next';
+
+const AgentPage: NextPage = () => {
+  const [ t ] = useTranslation();
+  const [showCopied, setShowCopied] = useState(false);
+  const router = useRouter();
+
+  const agentId = typeof router.query.id === "string" ? router.query.id : "";
+
+  const getAgent = api.agent.findById.useQuery(agentId, {
+    enabled: router.isReady,
+  });
+
+  const deleteAgent = api.agent.deleteById.useMutation({
+    onSuccess: () => {
+      void router.push("/
