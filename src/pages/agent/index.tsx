@@ -26,4 +26,21 @@ const AgentPage: NextPage = () => {
 
   const deleteAgent = api.agent.deleteById.useMutation({
     onSuccess: () => {
-      void router.push("/
+      void router.push("/");
+    },
+  });
+
+  const messages = getAgent.data ? (getAgent.data.tasks as Message[]) : [];
+
+  const shareLink = () => {
+    return encodeURI(`${env.NEXT_PUBLIC_VERCEL_URL as string}${router.asPath}`);
+  };
+
+  return (
+    <DefaultLayout
+      className="flex w-full flex-col items-center justify-center gap-4 p-2 sm:p-4"
+      centered
+    >
+      <ChatWindow
+        messages={messages}
+        title={getAgent?.data?.nam
