@@ -60,4 +60,19 @@ const AgentPage: NextPage = () => {
         >
           Share
         </Button>
-   
+        <Button
+          icon={<FaTrash />}
+          onClick={() => {
+            deleteAgent.mutate(agentId);
+          }}
+          enabledClassName={"bg-red-600 hover:bg-red-400"}
+        >
+          Delete
+        </Button>
+        <Button icon={<FaBackspace />} onClick={() => void router.push("/")}>
+          Back
+        </Button>
+      </div>
+      <Toast
+        model={[showCopied, setShowCopied]}
+        title={t('Copied to clipboard
