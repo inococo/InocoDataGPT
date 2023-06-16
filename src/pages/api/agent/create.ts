@@ -9,4 +9,26 @@ export const config = {
 
 const handler = async (request: NextRequest) => {
   try {
-    const { modelSettings, goal, task
+    const { modelSettings, goal, tasks, lastTask, result, completedTasks } =
+      (await request.json()) as RequestBody;
+
+    if (tasks === undefined || lastTask === undefined || result === undefined) {
+      return;
+    }
+
+    const newTasks = await AgentService.createTasksAgent(
+      modelSettings,
+      goal,
+      tasks,
+      lastTask,
+      result,
+      completedTasks
+    );
+
+    return NextResponse.json({ newTasks });
+  } catch (e) {}
+
+  return NextResponse.error();
+};
+
+export default
