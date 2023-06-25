@@ -43,3 +43,60 @@ const webhookHandler = async (req: NextApiRequest, res: NextApiResponse) => {
 
   try {
     event = stripe.webhooks.constructEvent(buf.toString(), sig, webhookSecret);
+  } catch (err) {
+    const errorMessage = err instanceof Error ? err.message : "Unknown error";
+    if (err instanceof Error) console.log(err);
+    console.log(`❌ Error message: ${errorMessage}`);
+    res.status(400).send(`Webhook Error: ${errorMessage}`);
+    return;
+  }
+
+  if (!event.type.startsWith("customer.subscription")) {
+    success(res);
+    return;
+  }
+
+  const subscription = event.data.object as Stripe.Subscription;
+  const email = await getCustomerEmail(stripe, subscription.customer);
+  const user = await prisma.user.findUniqueOrThrow({
+    where: {
+      email: email,
+    },
+  });
+
+  // Handle the event
+  switch (event.type) {
+    case "customer.subscription.deleted":
+    case "customer.subscription.paused":
+    case "customer.subscription.updated":
+    case "customer.subscription.resumed":
+      await updateUserSubscription(user.id, subscription);
+      break;
+    default:
+      console.log(`Unhandled event type ${event.type}.`);
+  }
+
+  success(res);
+};
+
+const updateUserSubscription = async (
+  userId: string,
+  subscription: Stripe.Subscription
+) => {
+  const subscriptionId =
+    subscription.status === "active" || subscription.status === "trialing"
+      ? subscription.id
+      : undefined;
+
+  await prisma.user.update({
+    where: {
+      id: userId,
+    },
+    data: {
+      subscriptionId,
+    },
+  });
+};
+
+// eslint-disable-next-line @typescript-eslint/no-unsafe-call
+export default cors(webhookHandler as any);
