@@ -11,4 +11,18 @@ const stripe = new Stripe(env.STRIPE_SECRET_KEY ?? "", {
 
 export const accountRouter = createTRPCRouter({
   subscribe: protectedProcedure.mutation(async ({ ctx }) => {
-    const use
+    const user = await prisma.user.findUniqueOrThrow({
+      where: {
+        id: ctx.session?.user?.id,
+      },
+    });
+
+    const checkoutSession = await stripe.checkout.sessions.create({
+      success_url: env.NEXTAUTH_URL,
+      cancel_url: env.NEXTAUTH_URL,
+      mode: "subscription",
+      line_items: [
+        {
+          // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
+          price: env.STRIPE_SUBSCRIPTION_PRICE_ID ?? "",
+    
