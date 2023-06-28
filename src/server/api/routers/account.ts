@@ -25,4 +25,19 @@ export const accountRouter = createTRPCRouter({
         {
           // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
           price: env.STRIPE_SUBSCRIPTION_PRICE_ID ?? "",
-    
+          quantity: 1,
+        },
+      ],
+      // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
+      customer: user.customerId ?? undefined,
+      customer_email: user.email ?? undefined,
+      client_reference_id: ctx.session?.user?.id,
+      metadata: {
+        userId: ctx.session?.user?.id,
+      },
+    });
+
+    return checkoutSession.url;
+  }),
+  manage: protectedProcedure.mutation(async ({ ctx }) => {
+    if (!ctx.session?.user?.subscriptionId) {
