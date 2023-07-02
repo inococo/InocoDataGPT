@@ -41,3 +41,18 @@ export const accountRouter = createTRPCRouter({
   }),
   manage: protectedProcedure.mutation(async ({ ctx }) => {
     if (!ctx.session?.user?.subscriptionId) {
+      return null;
+    }
+
+    const sub = await stripe.subscriptions.retrieve(
+      ctx.session?.user?.subscriptionId
+    );
+
+    const session = await stripe.billingPortal.sessions.create({
+      customer: getCustomerId(sub.customer),
+      return_url: env.NEXTAUTH_URL,
+    });
+
+    return session.url;
+  }),
+});
