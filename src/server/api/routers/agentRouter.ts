@@ -41,4 +41,26 @@ export const agentRouter = createTRPCRouter({
     return prisma.agent.findMany({
       where: {
         userId: ctx.session?.user?.id,
-        delet
+        deleteDate: null,
+      },
+      orderBy: { createDate: "desc" },
+      take: 20,
+    });
+  }),
+  findById: publicProcedure.input(z.string()).query(async ({ input, ctx }) => {
+    const agent = await prisma.agent.findFirstOrThrow({
+      where: { id: input, deleteDate: null },
+      include: {
+        tasks: {
+          orderBy: {
+            sort: "asc",
+          },
+        },
+      },
+    });
+
+    return {
+      ...agent,
+    };
+  }),
+  deleteById: protectedProcedu
