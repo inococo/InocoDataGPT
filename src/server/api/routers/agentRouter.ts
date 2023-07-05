@@ -21,3 +21,24 @@ export const agentRouter = createTRPCRouter({
           userId: ctx.session?.user?.id,
         },
       });
+
+      const all = input.tasks.map((e, i) => {
+        return prisma.agentTask.create({
+          data: {
+            agentId: agent.id,
+            type: e.type,
+            info: e.info,
+            value: e.value,
+            sort: i,
+          },
+        });
+      });
+
+      await Promise.all(all);
+      return agent;
+    }),
+  getAll: protectedProcedure.query(async ({ ctx }) => {
+    return prisma.agent.findMany({
+      where: {
+        userId: ctx.session?.user?.id,
+        delet
