@@ -63,4 +63,14 @@ export const agentRouter = createTRPCRouter({
       ...agent,
     };
   }),
-  deleteById: protectedProcedu
+  deleteById: protectedProcedure
+    .input(z.string())
+    .mutation(async ({ input, ctx }) => {
+      await prisma.agent.updateMany({
+        where: { id: input, userId: ctx.session?.user?.id },
+        data: {
+          deleteDate: new Date(),
+        },
+      });
+    }),
+});
