@@ -40,4 +40,14 @@ class SnowflakeConnection {
           if (err) {
             const snowflakeError = err as SnowflakeError;
             console.error('querySnowflake error:', err);
-           
+            // 407001: a connection was never established.
+            // 407002: a connection was disconnected.
+            if (snowflakeError.code === 407002 || snowflakeError.code === 407001) {
+              console.error('Connection terminated. Attempting to reconnect...');
+              this.connection = this.createConnection();
+              this.execute(sqlText)
+                .then(resolve)
+                .catch(reject);
+            } else {
+              reject(err);
+     
