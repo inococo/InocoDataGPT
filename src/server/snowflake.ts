@@ -25,4 +25,19 @@ class SnowflakeConnection {
     newConnection.connect((err) => {
       if (err) {
         console.error("Unable to connect to Snowflake:", err);
-      } else 
+      } else {
+        console.log("Successfully connected to Snowflake.");
+      }
+    });
+    return newConnection;
+  }
+
+  public async execute(sqlText: string): Promise<any> {
+    return new Promise((resolve, reject) => {
+      this.connection.execute({
+        sqlText,
+        complete: (err, stmt, rows) => {
+          if (err) {
+            const snowflakeError = err as SnowflakeError;
+            console.error('querySnowflake error:', err);
+           
