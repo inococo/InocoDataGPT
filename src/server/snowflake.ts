@@ -10,4 +10,19 @@ const connectionConfig = {
   region: process.env.SNOWFLAKE_REGION ?? '',
   warehouse: process.env.SNOWFLAKE_WAREHOUSE ?? '',
   database: process.env.SNOWFLAKE_DATABASE ?? '',
-  sche
+  schema: process.env.SNOWFLAKE_SCHEMA ?? '',
+};
+
+class SnowflakeConnection {
+  private connection: snowflake.Connection;
+
+  constructor() {
+    this.connection = this.createConnection();
+  }
+
+  private createConnection(): snowflake.Connection {
+    const newConnection = snowflake.createConnection(connectionConfig);
+    newConnection.connect((err) => {
+      if (err) {
+        console.error("Unable to connect to Snowflake:", err);
+      } else 
