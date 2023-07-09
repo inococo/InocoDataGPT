@@ -50,4 +50,26 @@ class SnowflakeConnection {
                 .catch(reject);
             } else {
               reject(err);
-     
+            }
+          } else {
+            resolve(rows);
+          }
+        },
+      });
+    });
+  }
+}
+
+const snowflakeConnection = new SnowflakeConnection();
+
+export async function querySnowflake(sqlText: string): Promise<any> {
+  return snowflakeConnection.execute(sqlText);
+}
+
+export async function snowflakeHandler(req: Request, res: Response): Promise<void> {
+  const { sql } = req.body;
+  console.log("snowflakeHandler.request");
+
+  if (sql) {
+    try {
+ 
