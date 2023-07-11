@@ -72,4 +72,13 @@ export async function snowflakeHandler(req: Request, res: Response): Promise<voi
 
   if (sql) {
     try {
- 
+      console.log("snowflakeHandler query:", sql);
+      const result = await querySnowflake(sql as string);
+      res.statusCode = 200;
+      res.setHeader('Content-Type', 'application/json');
+      res.end(JSON.stringify(result));
+      console.log("snowflakeHandler query result:", result);
+    } catch (error) {
+      res.statusCode = 500;
+      res.setHeader('Content-Type', 'application/json');
+      res.end(JSON.stringi
