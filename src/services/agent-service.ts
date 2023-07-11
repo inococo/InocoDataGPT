@@ -93,3 +93,116 @@ async function startGoalAgent(modelSettings: ModelSettings, goal: string) {
 
 async function executeTaskAgent(
   modelSettings: ModelSettings,
+  goal: string,
+  task: string
+) {
+  const completion = await new LLMChain({
+    llm: createModel(modelSettings),
+    prompt: executeTaskPrompt,
+  }).call({
+    goal,
+    task,
+  });
+
+  console.log("ExecuteCompleted:" + (completion.text as string));
+  return completion.text as string;
+}
+
+async function createTasksAgent(
+  modelSettings: ModelSettings,
+  goal: string,
+  tasks: string[],
+  lastTask: string,
+  result: string,
+  completedTasks: string[] | undefined
+) {
+  const completion = await new LLMChain({
+    llm: createModel(modelSettings),
+    prompt: createTasksPrompt,
+  }).call({
+    goal,
+    tasks,
+    lastTask,
+    result,
+  });
+
+  console.log("CreateCompleted:" + (completion.text as string));
+  return extractTasks(completion.text as string, completedTasks || []);
+}
+
+interface AgentService {
+  sqlQueryAgent: (
+    modelSettings: ModelSettings,
+    sql: string,
+    oldsql?: string,
+    errmsg?: string,
+    opstat?: string
+  ) => Promise<string>;
+  sqlTuneAgent: (
+    modelSettings: ModelSettings,
+    goal: string,
+    pres?: string
+  ) => Promise<any>;
+  startGoalAgent: (
+    modelSettings: ModelSettings,
+    goal: string
+  ) => Promise<string[]>;
+  executeTaskAgent: (
+    modelSettings: ModelSettings,
+    goal: string,
+    task: string
+  ) => Promise<string>;
+  createTasksAgent: (
+    modelSettings: ModelSettings,
+    goal: string,
+    tasks: string[],
+    lastTask: string,
+    result: string,
+    completedTasks: string[] | undefined
+  ) => Promise<string[]>;
+}
+
+const OpenAIAgentService: AgentService = {
+  sqlQueryAgent: sqlQueryAgent,
+  sqlTuneAgent: sqlTuneAgent,
+  startGoalAgent: startGoalAgent,
+  executeTaskAgent: executeTaskAgent,
+  createTasksAgent: createTasksAgent,
+};
+
+const MockAgentService: AgentService = {
+  sqlQueryAgent: async (modelSettings, stmt) => {
+    return await new Promise((resolve) => resolve("select"));
+  },
+
+  sqlTuneAgent: async (modelSettings, goal) => {
+    return await new Promise((resolve) => resolve("select"));
+  },
+
+  startGoalAgent: async (modelSettings, goal) => {
+    return await new Promise((resolve) => resolve(["Task 1"]));
+  },
+
+  createTasksAgent: async (
+    modelSettings: ModelSettings,
+    goal: string,
+    tasks: string[],
+    lastTask: string,
+    result: string,
+    completedTasks: string[] | undefined
+  ) => {
+    return await new Promise((resolve) => resolve(["Task 4"]));
+  },
+
+  executeTaskAgent: async (
+    modelSettings: ModelSettings,
+    goal: string,
+    task: string
+  ) => {
+    return await new Promise((resolve) => resolve("Result: " + task));
+  },
+};
+
+export default env.NEXT_PUBLIC_FF_MOCK_MODE_ENABLED
+  ? MockAgentService
+  : OpenAIAgentService;
