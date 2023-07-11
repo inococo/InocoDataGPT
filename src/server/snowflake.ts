@@ -81,4 +81,15 @@ export async function snowflakeHandler(req: Request, res: Response): Promise<voi
     } catch (error) {
       res.statusCode = 500;
       res.setHeader('Content-Type', 'application/json');
-      res.end(JSON.stringi
+      res.end(JSON.stringify({ error: (error as Error).message ?? 'An unknown error occurred' }));
+      console.error("snowflakeHandler error:", error);
+    }
+  } else {
+    res.statusCode = 400;
+    res.setHeader('Content-Type', 'application/json');
+    res.end(JSON.stringify({ error: 'Missing sql statement' }));
+    console.warn("snowflakeHandler empty request");
+  }
+}
+
+export default snowflakeHandler;
