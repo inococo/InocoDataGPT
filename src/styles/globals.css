@@ -28,4 +28,29 @@
   right: 0;
 }
 
-/* Used for code 
+/* Used for code / table formatting within messages */
+pre {
+  @apply overflow-auto rounded-lg;
+}
+
+.window-heights {
+  @apply h-[16em] overflow-y-auto overflow-x-hidden sm-h:h-[17em] md-h:h-[22em] lg-h:h-[30em];
+}
+
+.table-container {
+  overflow-x: auto;
+  max-width: 100%;
+}
+
+table {
+  @apply w-full rounded-lg text-sm text-white;
+  background-color: #0d1117;
+}
+
+th,
+td {
+  @apply rounded-lg border border-gray-700 px-4 py-2;
+}
+
+th {
+  background-color: #
