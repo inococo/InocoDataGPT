@@ -17,4 +17,8 @@ declare module 'snowflake-sdk' {
     schema: string;
   }): Connection;
 
-  export
+  export interface SnowflakeError {
+    code: number;
+    isFatal: boolean;
+  }
+}
