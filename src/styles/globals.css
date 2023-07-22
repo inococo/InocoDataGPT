@@ -53,4 +53,28 @@ td {
 }
 
 th {
-  background-color: #
+  background-color: #161b22;
+}
+
+tr:nth-child(even) {
+  background-color: #1c2028;
+}
+
+/* Customize website's scrollbar like Mac OS
+Not supports in Firefox and IE */
+/* total width */
+div::-webkit-scrollbar {
+  border-radius: 16px;
+  background-color: #464649;
+  width: 16px;
+}
+
+/* background of the scrollbar except button or resizer */
+div::-webkit-scrollbar-track {
+  border-radius: 16px;
+  background-color: #464649;
+}
+
+/* scrollbar itself */
+div::-webkit-scrollbar-thumb {
+  back
