@@ -77,4 +77,12 @@ div::-webkit-scrollbar-track {
 
 /* scrollbar itself */
 div::-webkit-scrollbar-thumb {
-  back
+  background-color: #babac0;
+  border-radius: 16px;
+  border: 2px solid #464649;
+}
+
+/* set button(top and bottom of the scrollbar) */
+div::-webkit-scrollbar-button {
+  display: none;
+}
