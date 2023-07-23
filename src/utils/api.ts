@@ -32,4 +32,22 @@ export const api = createTRPCNext<AppRouter>({
 
       /**
        * Links used to determine request flow from client to server
-       * @see https://trpc.
+       * @see https://trpc.io/docs/links
+       * */
+      links: [
+        loggerLink({
+          enabled: (opts) =>
+            process.env.NODE_ENV === "development" ||
+            (opts.direction === "down" && opts.result instanceof Error),
+        }),
+        httpBatchLink({
+          url: `${getBaseUrl()}/api/trpc`,
+        }),
+      ],
+    };
+  },
+  /**
+   * Whether tRPC should await queries when server rendering pages
+   * @see https://trpc.io/docs/nextjs#ssr-boolean-default-false
+   */
+  ssr: f
