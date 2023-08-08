@@ -36,4 +36,17 @@ export const extractArray = (inputStr: string): string[] => {
       // Parse the matched string to get the array
       return JSON.parse(match[0]) as string[];
     } catch (error) {
-      console.error("Error parsing the matc
+      console.error("Error parsing the matched array:", error);
+    }
+  }
+
+  console.warn("Error, could not extract array from inputString:", inputStr);
+  return [];
+};
+
+// Model will return tasks such as "No tasks added". We should filter these
+export const realTasksFilter = (input: string): boolean => {
+  const noTaskRegex =
+    /^No( (new|further|additional|extra|other))? tasks? (is )?(required|needed|added|created|inputted).*$/i;
+  const taskCompleteRegex =
+   
