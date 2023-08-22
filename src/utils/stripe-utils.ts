@@ -23,4 +23,8 @@ export const getCustomerEmail = async (
 
   let c = customer;
   if (typeof customer === "string") {
-    c = await stripe.custome
+    c = await stripe.customers.retrieve(customer);
+  }
+
+  return (c as Stripe.Customer).email ?? "";
+};
