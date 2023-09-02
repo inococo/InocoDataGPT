@@ -65,4 +65,25 @@ use the provided setup script.
 
 ### 🛠️ Manual Setup
 
-> 🚧 You will need [Nodej
+> 🚧 You will need [Nodejs +18 (LTS recommended)](https://nodejs.org/en/) installed.
+
+1. Clone the repository:
+
+```bash
+git clone git@github.com:inococo/InocoDataGPT.git
+```
+
+2. Install dependencies:
+
+```bash
+cd InocoDataGPT
+npm install
+```
+
+3. Create a **.env** file with the following content:
+
+> 🚧 The environment variables must match the following [schema](https://github.com/inococo/InocoDataGPT/blob/main/src/env/schema.mjs).
+
+```bash
+# Deployment Environment:
+NO
