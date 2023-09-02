@@ -86,4 +86,22 @@ npm install
 
 ```bash
 # Deployment Environment:
-NO
+NODE_ENV=development
+
+# Next Auth config:
+# Generate a secret with `openssl rand -base64 32`
+NEXTAUTH_SECRET=changeme
+NEXTAUTH_URL=http://localhost:3000
+DATABASE_URL=file:./db.sqlite
+
+# Your open api key
+OPENAI_API_KEY=changeme
+
+# Snowflake account info
+SNOWFLAKE_ACCOUNT=changeme
+SNOWFLAKE_USERNAME=changeme
+SNOWFLAKE_PASSWORD=changeme
+SNOWFLAKE_REGION=changeme
+SNOWFLAKE_WAREHOUSE=changeme
+SNOWFLAKE_DATABASE=changeme
+SNOWFLAK
