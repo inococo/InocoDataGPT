@@ -41,4 +41,28 @@ More Coming soon...
 - ✅ **Database**: [Supabase](https://supabase.com/).
 - ✅ **Styling**: [TailwindCSS + HeadlessUI](https://tailwindcss.com).
 - ✅ **Typescript Schema Validation**: [Zod](https://github.com/colinhacks/zod).
-- ✅ **End-to-end typesafe API**: [tRPC]
+- ✅ **End-to-end typesafe API**: [tRPC](https://trpc.io/).
+
+## 👨‍🚀 Getting Started
+
+### 🐳 Docker Setup
+
+The easiest way to run InocoDataGPT locally is by using docker.
+A convenient setup script is provided to help you get started.
+
+```bash
+./setup.sh --docker
+```
+
+### 👷 Local Development Setup
+
+If you wish to develop InocoDataGPT locally, the easiest way is to
+use the provided setup script.
+
+```bash
+./setup.sh --local
+```
+
+### 🛠️ Manual Setup
+
+> 🚧 You will need [Nodej
