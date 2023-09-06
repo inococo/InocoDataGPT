@@ -104,4 +104,27 @@ SNOWFLAKE_PASSWORD=changeme
 SNOWFLAKE_REGION=changeme
 SNOWFLAKE_WAREHOUSE=changeme
 SNOWFLAKE_DATABASE=changeme
-SNOWFLAK
+SNOWFLAKE_SCHEMA=changeme
+```
+
+4. Modify prisma schema to use sqlite:
+
+```bash
+./prisma/useSqlite.sh
+```
+
+**Note:** This only needs to be done if you wish to use sqlite.
+
+5. Ready 🥳, now run:
+
+```bash
+# Create database migrations
+npx prisma db push
+npm run dev:all
+```
+
+### 🚀 GitHub Codespaces
+
+Set up InocoDataGPT in the cloud immediately by using [GitHub Codespaces](https://github.com/features/codespaces).
+
+1. From the GitHub repo, click the green "Code" bu
